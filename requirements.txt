@@ -1,0 +1,28 @@
+# Web framework
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy[asyncio]
+asyncpg
+
+# Vector store
+qdrant-client
+
+# ML models
+sentence-transformers
+huggingface-hub
+
+# Config
+pydantic-settings
+python-dotenv
+
+# UI
+streamlit
+requests
+
+pyvi
+pymupdf
+PyPDF2
+langchain
+langchain-text-splitters
