@@ -1,14 +1,30 @@
+from collections.abc import Iterator
+
 from huggingface_hub import InferenceClient
+
 from config.settings import settings
 
 client = InferenceClient(api_key=settings.hf_api_token)
 
 
 def generate(messages: list[dict]) -> str:
-    """Send messages to HuggingFace LLM and return response text."""
+    """Call LLM and return full response text."""
     response = client.chat_completion(
         model=settings.hf_model_id,
         messages=messages,
         max_tokens=1024,
     )
     return response.choices[0].message.content
+
+
+def generate_stream(messages: list[dict]) -> Iterator[str]:
+    """Yield tokens one at a time as the LLM generates them."""
+    for chunk in client.chat_completion(
+        model=settings.hf_model_id,
+        messages=messages,
+        max_tokens=1024,
+        stream=True,
+    ):
+        token = chunk.choices[0].delta.content
+        if token:
+            yield token

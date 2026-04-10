@@ -1,5 +1,6 @@
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, PointStruct
+
 from config.settings import settings
 
 client = QdrantClient(host=settings.qdrant_host, port=settings.qdrant_port)
@@ -22,15 +23,12 @@ def upsert(points: list[PointStruct]):
     client.upsert(collection_name=COLLECTION, points=points)
 
 
-def search(vector: list[float], top_k: int = 20) -> list[dict]:
-    """Search for similar vectors, return list of payloads with scores."""
+def search(vector: list[float], top_k: int = 10) -> list[dict]:
+    """Sync search."""
     results = client.query_points(
         collection_name=COLLECTION,
         query=vector,
         limit=top_k,
         with_payload=True,
     )
-    return [
-        {"score": r.score, **r.payload}
-        for r in results.points
-    ]
+    return [{"score": r.score, **r.payload} for r in results.points]
