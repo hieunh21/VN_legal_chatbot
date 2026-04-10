@@ -2,7 +2,7 @@ import json
 from collections.abc import Iterator
 
 from app.models.message import Message
-from app.services import embedding_service, llm_service, reranker_service
+from app.services import embedding_service, llm_service, reranker_service, gemini_service
 from app.vector_store import qdrant_store
 
 SYSTEM_PROMPT = (
@@ -29,10 +29,40 @@ def _format_sources(top_chunks: list[dict]) -> list[dict]:
 
 
 def _retrieve(query: str) -> tuple[list[dict], list[dict]]:
-    """Embed → search → rerank. Returns (top_chunks, sources)."""
-    query_vector = embedding_service.embed(query)
-    candidates = qdrant_store.search(query_vector, top_k=10)
-    top_chunks = reranker_service.rerank(query, candidates, top_n=5)
+    """Gemini Expansion → Embed batch → search → deduplicate → rerank."""
+    
+    # 1. Multi-Query Expansion
+    variations = gemini_service.generate_multi_queries(query)
+    
+    # [START DEBUG] -> In ra terminal để xem
+    print("\n" + "="*50)
+    print("GEMINI ĐÃ MỞ RỘNG CÂU HỎI THÀNH CÁC BIẾN THỂ:")
+    for i, var in enumerate(variations):
+        print(f" {i+1}. {var}")
+    print("="*50 + "\n")
+    # [END DEBUG]
+
+    all_queries = [query] + variations  # Mảng gồm 4 câu (1 gốc + 3 con)
+
+    # 2. Vectorization (Batch Embedding)
+    query_vectors = embedding_service.embed_batch(all_queries)
+
+    # 3. Parallel/Sequential Search & Deduplicate
+    all_candidates = []
+    seen_texts = set()
+
+    for vector in query_vectors:
+        results = qdrant_store.search(vector, top_k=10)
+        for r in results:
+            chunk_content = r.get("context", "")
+            # Deduplicate (Lọc trùng) bằng nội dung text
+            if chunk_content and chunk_content not in seen_texts:
+                seen_texts.add(chunk_content)
+                all_candidates.append(r)
+
+    # 4. Rerank toàn bộ pool ứng viên thô (~40 chunks)
+    top_chunks = reranker_service.rerank(query, all_candidates, top_n=5)
+    
     return top_chunks, _format_sources(top_chunks)
 
 

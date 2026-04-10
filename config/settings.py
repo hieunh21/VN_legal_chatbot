@@ -14,6 +14,9 @@ class Settings(BaseSettings):
     hf_api_token: str = ""
     hf_model_id: str = "mistralai/Mistral-7B-Instruct-v0.3"
 
+    # Gemini
+    gemini_api_key: str = ""
+
     # Models
     embedding_model: str = "BAAI/bge-m3"
     reranker_model: str = "BAAI/bge-reranker-v2-m3"
