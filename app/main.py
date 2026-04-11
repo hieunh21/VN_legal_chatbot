@@ -4,10 +4,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routers import session, chat
 
 
+from app.vector_store import qdrant_store
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup: models are loaded on first import
     print("Server started. Models will load on first request.")
+    qdrant_store.ensure_collection()
     yield
     # Shutdown
     print("Server stopped.")

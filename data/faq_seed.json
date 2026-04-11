@@ -1,0 +1,506 @@
+[
+  {
+    "question": "Đi xe mà không có giấy phép lái xe có bị cấm không?",
+    "answer": "Luật nghiêm cấm điều khiển xe cơ giới tham gia giao thông đường bộ không có giấy phép lái xe theo quy định.",
+    "legal_basis": [
+      "Điều 9 khoản 1"
+    ]
+  },
+  {
+    "question": "Có được lái xe khi trong máu hoặc hơi thở có nồng độ cồn không?",
+    "answer": "Không được. Luật nghiêm cấm điều khiển phương tiện khi trong máu hoặc hơi thở có nồng độ cồn.",
+    "legal_basis": [
+      "Điều 9 khoản 2"
+    ]
+  },
+  {
+    "question": "Có được lái xe khi trong cơ thể có chất ma túy không?",
+    "answer": "Không được. Luật nghiêm cấm điều khiển phương tiện khi trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng.",
+    "legal_basis": [
+      "Điều 9 khoản 3"
+    ]
+  },
+  {
+    "question": "Đang chạy xe có được cầm điện thoại không?",
+    "answer": "Không được dùng tay cầm và sử dụng điện thoại hoặc thiết bị điện tử khác khi điều khiển phương tiện đang di chuyển.",
+    "legal_basis": [
+      "Điều 9 khoản 6"
+    ]
+  },
+  {
+    "question": "Có được giao xe cho người không đủ điều kiện lái không?",
+    "answer": "Không được. Luật nghiêm cấm giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển.",
+    "legal_basis": [
+      "Điều 9 khoản 7"
+    ]
+  },
+  {
+    "question": "Đèn đỏ có nghĩa là gì?",
+    "answer": "Đèn đỏ là cấm đi.",
+    "legal_basis": [
+      "Quy định về tín hiệu đèn giao thông"
+    ]
+  },
+  {
+    "question": "Đèn xanh có phải cứ thế chạy không?",
+    "answer": "Đèn xanh là được đi, nhưng vẫn phải giảm tốc độ hoặc dừng lại nhường người đi bộ, xe lăn của người khuyết tật qua đường.",
+    "legal_basis": [
+      "Quy định về tín hiệu đèn giao thông"
+    ]
+  },
+  {
+    "question": "Đèn vàng thì phải dừng hay được đi?",
+    "answer": "Đèn vàng là phải dừng trước vạch dừng, trừ trường hợp đang đi trên vạch dừng hoặc đã qua vạch dừng thì được đi tiếp.",
+    "legal_basis": [
+      "Quy định về tín hiệu đèn giao thông"
+    ]
+  },
+  {
+    "question": "Đèn vàng nhấp nháy thì được đi như thế nào?",
+    "answer": "Được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường khi cần thiết.",
+    "legal_basis": [
+      "Quy định về tín hiệu đèn giao thông"
+    ]
+  },
+  {
+    "question": "Hiệu lệnh của người điều khiển giao thông có ưu tiên hơn đèn và biển báo không?",
+    "answer": "Có. Hiệu lệnh của người điều khiển giao thông được ưu tiên chấp hành cao nhất.",
+    "legal_basis": [
+      "Quy định về thứ tự chấp hành báo hiệu đường bộ"
+    ]
+  },
+  {
+    "question": "Khi rẽ có bắt buộc bật xi nhan không?",
+    "answer": "Có. Khi chuyển hướng phải giảm tốc độ, có tín hiệu báo hướng rẽ; xe thô sơ không có đèn báo rẽ thì báo bằng tay.",
+    "legal_basis": [
+      "Điều 15 khoản 2"
+    ]
+  },
+  {
+    "question": "Khi rẽ có phải nhường người đi bộ không?",
+    "answer": "Có. Khi chuyển hướng phải nhường người đi bộ, xe thô sơ, xe đi ngược chiều.",
+    "legal_basis": [
+      "Điều 15 khoản 3"
+    ]
+  },
+  {
+    "question": "Có được quay đầu xe trên cầu không?",
+    "answer": "Không được quay đầu xe ở nhiều vị trí như trên cầu, trong hầm, trên đường cao tốc và các nơi luật cấm.",
+    "legal_basis": [
+      "Điều 15 khoản 4"
+    ]
+  },
+  {
+    "question": "Khi lùi xe cần làm gì?",
+    "answer": "Phải quan sát hai bên và phía sau, có tín hiệu lùi và chỉ lùi khi bảo đảm an toàn.",
+    "legal_basis": [
+      "Điều 16 khoản 1"
+    ]
+  },
+  {
+    "question": "Những nơi nào không được lùi xe?",
+    "answer": "Không được lùi xe ở đường một chiều, nơi giao nhau, trong hầm, trên cao tốc và các vị trí luật cấm khác.",
+    "legal_basis": [
+      "Điều 16 khoản 2"
+    ]
+  },
+  {
+    "question": "Hai xe ngược chiều tránh nhau thì phải đi như thế nào?",
+    "answer": "Hai xe ngược chiều phải giảm tốc độ và đi về bên phải theo chiều xe chạy của mình.",
+    "legal_basis": [
+      "Điều 17 khoản 1"
+    ]
+  },
+  {
+    "question": "Xe xuống dốc hay xe lên dốc được ưu tiên khi tránh nhau?",
+    "answer": "Xe xuống dốc phải nhường đường cho xe lên dốc.",
+    "legal_basis": [
+      "Điều 17 khoản 2"
+    ]
+  },
+  {
+    "question": "Dừng xe và đỗ xe khác nhau thế nào?",
+    "answer": "Dừng xe là đứng yên tạm thời; đỗ xe là đứng yên không giới hạn thời gian.",
+    "legal_basis": [
+      "Điều 18 khoản 1,2"
+    ]
+  },
+  {
+    "question": "Có được dừng đỗ trên vạch cho người đi bộ không?",
+    "answer": "Không được dừng, đỗ xe trên phần đường dành cho người đi bộ qua đường.",
+    "legal_basis": [
+      "Điều 18 khoản 4"
+    ]
+  },
+  {
+    "question": "Có được dừng đỗ gần ngã tư không?",
+    "answer": "Không được dừng, đỗ tại nơi đường giao nhau và trong phạm vi 5 mét tính từ mép đường giao nhau.",
+    "legal_basis": [
+      "Điều 18 khoản 4"
+    ]
+  },
+  {
+    "question": "Xe hỏng giữa đường thì phải làm gì khi buộc phải đỗ ở chỗ cấm?",
+    "answer": "Phải có báo hiệu bằng đèn khẩn cấp hoặc đặt biển cảnh báo phía sau xe.",
+    "legal_basis": [
+      "Điều 18 khoản 7"
+    ]
+  },
+  {
+    "question": "Có được mở cửa xe khi xe chưa dừng hẳn không?",
+    "answer": "Không. Chỉ được mở cửa xe khi xe đã dừng, đỗ.",
+    "legal_basis": [
+      "Điều 19 khoản 1"
+    ]
+  },
+  {
+    "question": "Ban đêm có bắt buộc bật đèn chiếu sáng phía trước không?",
+    "answer": "Có. Phải bật đèn chiếu sáng phía trước từ 18 giờ đến 06 giờ hoặc khi thời tiết xấu hạn chế tầm nhìn.",
+    "legal_basis": [
+      "Điều 20 khoản 1"
+    ]
+  },
+  {
+    "question": "Gặp xe đi ngược chiều có được bật đèn pha không?",
+    "answer": "Không được bật đèn chiếu xa khi gặp xe đi ngược chiều; phải tắt đèn chiếu xa và bật đèn chiếu gần, trừ trường hợp có dải phân cách chống chói.",
+    "legal_basis": [
+      "Điều 20 khoản 2"
+    ]
+  },
+  {
+    "question": "Trong khu dân cư ban đêm có được bấm còi không?",
+    "answer": "Không được dùng còi từ 22 giờ đến 05 giờ trong khu đông dân cư và khu vực cơ sở khám chữa bệnh, trừ xe ưu tiên.",
+    "legal_basis": [
+      "Điều 21 khoản 2"
+    ]
+  },
+  {
+    "question": "Đến giao lộ giữa đường ưu tiên và đường không ưu tiên thì xe nào phải nhường?",
+    "answer": "Xe đi từ đường không ưu tiên hoặc đường nhánh phải nhường đường cho xe đi trên đường ưu tiên hoặc đường chính.",
+    "legal_basis": [
+      "Điều 22 khoản 1"
+    ]
+  },
+  {
+    "question": "Giao lộ không có vòng xuyến thì phải nhường xe từ bên nào?",
+    "answer": "Phải nhường đường cho xe đi đến từ bên phải.",
+    "legal_basis": [
+      "Điều 22 khoản 2"
+    ]
+  },
+  {
+    "question": "Giao lộ có vòng xuyến thì phải nhường xe từ bên nào?",
+    "answer": "Phải nhường đường cho xe đi đến từ bên trái.",
+    "legal_basis": [
+      "Điều 22 khoản 3"
+    ]
+  },
+  {
+    "question": "Qua phà qua cầu phao thì xe nào được ưu tiên trước?",
+    "answer": "Thứ tự ưu tiên gồm xe ưu tiên, xe chở thư báo, xe chở thực phẩm tươi sống, xe chở khách công cộng; cùng thứ tự thì xe đến trước qua trước.",
+    "legal_basis": [
+      "Điều 23 khoản 2"
+    ]
+  },
+  {
+    "question": "Chở trẻ em dưới 6 tuổi bằng xe máy thì cần lưu ý gì?",
+    "answer": "Gia đình có trách nhiệm nhắc nhở sử dụng ghế dành cho trẻ em hoặc có người lớn ngồi cùng trẻ em phía sau khi chở trẻ dưới 6 tuổi bằng xe gắn máy, xe mô tô.",
+    "legal_basis": [
+      "Điều 5 khoản 7"
+    ]
+  },
+  {
+    "question": "Ai được coi là người tiêu dùng theo luật?",
+    "answer": "Người mua, sử dụng sản phẩm, hàng hóa, dịch vụ cho mục đích tiêu dùng, sinh hoạt và không vì mục đích thương mại.",
+    "legal_basis": [
+      "Điều 3 khoản 1"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có quyền được cung cấp thông tin đầy đủ không?",
+    "answer": "Có. Người tiêu dùng có quyền được cung cấp hóa đơn, chứng từ và thông tin kịp thời, chính xác, đầy đủ.",
+    "legal_basis": [
+      "Điều 4 khoản 2"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có quyền yêu cầu bồi thường khi hàng hóa có khuyết tật không?",
+    "answer": "Có. Người tiêu dùng có quyền yêu cầu bồi thường thiệt hại khi hàng hóa có khuyết tật hoặc không đúng cam kết, tiêu chuẩn, chất lượng.",
+    "legal_basis": [
+      "Điều 4 khoản 5"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có được khiếu nại, tố cáo, khởi kiện không?",
+    "answer": "Có. Người tiêu dùng có quyền khiếu nại, tố cáo, khởi kiện hoặc đề nghị tổ chức xã hội khởi kiện.",
+    "legal_basis": [
+      "Điều 4 khoản 7"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có phải kiểm tra hàng trước khi nhận không?",
+    "answer": "Có. Người tiêu dùng có nghĩa vụ kiểm tra sản phẩm, hàng hóa trước khi nhận theo quy định của pháp luật.",
+    "legal_basis": [
+      "Điều 5 khoản 1"
+    ]
+  },
+  {
+    "question": "Phát hiện hàng hóa không an toàn thì người tiêu dùng phải làm gì?",
+    "answer": "Phải thông tin kịp thời, chính xác cho cơ quan nhà nước, tổ chức, cá nhân liên quan.",
+    "legal_basis": [
+      "Điều 5 khoản 4"
+    ]
+  },
+  {
+    "question": "Những ai là người tiêu dùng dễ bị tổn thương?",
+    "answer": "Gồm người cao tuổi, người khuyết tật, trẻ em, phụ nữ mang thai hoặc nuôi con nhỏ, người bệnh hiểm nghèo, hộ nghèo và một số nhóm khác theo luật.",
+    "legal_basis": [
+      "Điều 8 khoản 1"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được từ chối xử lý yêu cầu của người tiêu dùng dễ bị tổn thương vì khác biệt tiếng nói, chữ viết, phong tục không?",
+    "answer": "Không được từ chối chỉ vì khác biệt về tiếng nói, chữ viết, phong tục, tập quán.",
+    "legal_basis": [
+      "Điều 8 khoản 3 điểm c"
+    ]
+  },
+  {
+    "question": "Người bán hàng nhỏ lẻ không đăng ký kinh doanh có phải bảo đảm chất lượng và thông tin hàng hóa không?",
+    "answer": "Có. Họ vẫn phải bảo đảm an toàn, chất lượng, công dụng và cung cấp chính xác, đầy đủ thông tin cho người tiêu dùng.",
+    "legal_basis": [
+      "Điều 9 khoản 1"
+    ]
+  },
+  {
+    "question": "Người bán có được lừa dối hoặc gây nhầm lẫn cho người tiêu dùng không?",
+    "answer": "Không được. Đây là hành vi bị nghiêm cấm.",
+    "legal_basis": [
+      "Điều 10 khoản 1 điểm a"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được quấy rối người tiêu dùng bằng cuộc gọi, tin nhắn trái ý muốn không?",
+    "answer": "Không được. Hành vi tiếp xúc trực tiếp hoặc gián tiếp trái với ý muốn người tiêu dùng để giới thiệu hàng hóa, dịch vụ là bị cấm.",
+    "legal_basis": [
+      "Điều 10 khoản 1 điểm b"
+    ]
+  },
+  {
+    "question": "Có được ép người tiêu dùng mua hàng không?",
+    "answer": "Không được. Ép buộc người tiêu dùng mua sản phẩm, hàng hóa, dịch vụ trái với ý muốn là hành vi bị cấm.",
+    "legal_basis": [
+      "Điều 10 khoản 1 điểm c"
+    ]
+  },
+  {
+    "question": "Có được bắt người tiêu dùng trả tiền cho hàng hóa, dịch vụ mà họ chưa thỏa thuận mua không?",
+    "answer": "Không được. Ép người tiêu dùng thanh toán cho hàng hóa, dịch vụ đã cung cấp mà không có thỏa thuận trước là bị cấm.",
+    "legal_basis": [
+      "Điều 10 khoản 1 điểm d"
+    ]
+  },
+  {
+    "question": "Hàng giao không đúng quảng cáo hoặc cam kết thì người tiêu dùng có quyền đổi trả hoặc hoàn tiền không?",
+    "answer": "Có. Doanh nghiệp phải đền bù, trả lại tiền hoặc đổi lại nếu hàng hóa, dịch vụ không đúng cam kết, quảng cáo, giới thiệu.",
+    "legal_basis": [
+      "Điều 10 khoản 1 điểm e"
+    ]
+  },
+  {
+    "question": "Nền tảng số có được ưu tiên hiển thị nhà bán hàng mà không công khai tiêu chí không?",
+    "answer": "Không được. Nền tảng số không được hạn chế quyền lựa chọn của người tiêu dùng bằng việc sắp xếp ưu tiên mà không công khai tiêu chí.",
+    "legal_basis": [
+      "Điều 10 khoản 3 điểm b"
+    ]
+  },
+  {
+    "question": "Nền tảng số có được xóa hoặc che phản hồi đánh giá của người tiêu dùng một cách không trung thực không?",
+    "answer": "Không được, trừ trường hợp phản hồi vi phạm pháp luật hoặc trái đạo đức xã hội.",
+    "legal_basis": [
+      "Điều 10 khoản 3 điểm c"
+    ]
+  },
+  {
+    "question": "Nền tảng số có được ngăn người dùng gỡ ứng dụng cài sẵn không?",
+    "answer": "Không được ngăn gỡ ứng dụng cài sẵn nếu việc gỡ bỏ không ảnh hưởng đến chức năng cơ bản của nền tảng.",
+    "legal_basis": [
+      "Điều 10 khoản 3 điểm đ"
+    ]
+  },
+  {
+    "question": "Bị xâm phạm quyền lợi thì có thể yêu cầu cơ quan nhà nước xử lý không?",
+    "answer": "Có. Người tiêu dùng có quyền yêu cầu trực tiếp hoặc bằng văn bản đến cơ quan nhà nước có thẩm quyền để được xử lý.",
+    "legal_basis": [
+      "Điều 11 khoản 1"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có phải cảnh báo nếu sản phẩm có khả năng gây mất an toàn không?",
+    "answer": "Có. Doanh nghiệp phải cảnh báo sản phẩm, hàng hóa, dịch vụ có khả năng gây mất an toàn và thông báo biện pháp phòng ngừa.",
+    "legal_basis": [
+      "Điều 14"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được tự ý thu thập, lưu trữ, sử dụng thông tin của người tiêu dùng không?",
+    "answer": "Thông tin người tiêu dùng được bảo vệ; việc thu thập, lưu trữ, sử dụng phải tuân thủ luật và quy định liên quan.",
+    "legal_basis": [
+      "Điều 15 khoản 1"
+    ]
+  },
+  {
+    "question": "Thuê bên thứ ba xử lý dữ liệu khách hàng có cần sự đồng ý của người tiêu dùng không?",
+    "answer": "Có. Phải được sự đồng ý của người tiêu dùng và việc ủy quyền hoặc thuê phải bằng văn bản, nêu rõ phạm vi và trách nhiệm.",
+    "legal_basis": [
+      "Điều 15 khoản 2"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có phải công khai quy tắc bảo vệ thông tin của người tiêu dùng không?",
+    "answer": "Có. Phải xây dựng và công khai quy tắc bảo vệ thông tin như mục đích thu thập, phạm vi sử dụng, thời hạn lưu trữ, biện pháp bảo vệ.",
+    "legal_basis": [
+      "Điều 16"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được dùng thông tin của người tiêu dùng để quảng cáo nếu không cho họ lựa chọn đồng ý hay không đồng ý không?",
+    "answer": "Không được. Phải có cơ chế để người tiêu dùng lựa chọn cho phép hoặc không cho phép dùng thông tin để quảng cáo.",
+    "legal_basis": [
+      "Điều 18"
+    ]
+  },
+  {
+    "question": "Điều khoản hợp đồng hạn chế quyền khiếu nại, khởi kiện của người tiêu dùng có hợp pháp không?",
+    "answer": "Không hợp pháp. Đây là điều khoản không được phép trong hợp đồng theo mẫu, điều kiện giao dịch chung.",
+    "legal_basis": [
+      "Điều 25"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được đơn phương thay đổi hợp đồng đã ký với người tiêu dùng không?",
+    "answer": "Không được. Đây là điều khoản không được phép.",
+    "legal_basis": [
+      "Điều 25"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp có được tự ý đổi giá vào lúc giao hàng không?",
+    "answer": "Không được phép, trừ trường hợp pháp luật có quy định khác.",
+    "legal_basis": [
+      "Điều 25"
+    ]
+  },
+  {
+    "question": "Trước khi ký hợp đồng theo mẫu, người tiêu dùng có phải được cho thời gian để đọc không?",
+    "answer": "Có. Doanh nghiệp phải dành thời gian hợp lý để người tiêu dùng nghiên cứu hợp đồng trước khi giao kết.",
+    "legal_basis": [
+      "Điều 26"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có quyền yêu cầu hóa đơn, chứng từ, tài liệu giao dịch không?",
+    "answer": "Có. Doanh nghiệp có trách nhiệm cung cấp hóa đơn, chứng từ, tài liệu liên quan theo luật hoặc theo yêu cầu của người tiêu dùng.",
+    "legal_basis": [
+      "Điều 29"
+    ]
+  },
+  {
+    "question": "Giao dịch từ xa là gì?",
+    "answer": "Là giao dịch trên không gian mạng, phương tiện điện tử hoặc phương tiện khác mà người tiêu dùng không được kiểm tra, tiếp xúc trực tiếp với hàng hóa, dịch vụ trước khi tham gia giao dịch.",
+    "legal_basis": [
+      "Điều 3 khoản 5"
+    ]
+  },
+  {
+    "question": "Khi bán hàng qua điện thoại, người bán có phải giới thiệu ngay tên, địa chỉ và mục đích cuộc gọi không?",
+    "answer": "Có. Khi giao dịch qua điện thoại hoặc hình thức đàm thoại khác, phải thông tin ngay từ đầu về tên, địa chỉ và mục đích cuộc đàm thoại.",
+    "legal_basis": [
+      "Điều 37"
+    ]
+  },
+  {
+    "question": "Trong giao dịch từ xa, doanh nghiệp có phải cho người tiêu dùng xem trước nội dung hợp đồng không?",
+    "answer": "Có. Doanh nghiệp phải cung cấp chính xác, đầy đủ nội dung hợp đồng để người tiêu dùng nghiên cứu trước khi giao kết.",
+    "legal_basis": [
+      "Điều 38"
+    ]
+  },
+  {
+    "question": "Sau khi xác nhận giao dịch từ xa, người tiêu dùng có được xem lại và tải về hợp đồng không?",
+    "answer": "Có. Người tiêu dùng phải có cơ hội xem lại và tải về hợp đồng đã xác nhận.",
+    "legal_basis": [
+      "Điều 38"
+    ]
+  },
+  {
+    "question": "Dịch vụ liên tục là gì?",
+    "answer": "Là việc cung cấp dịch vụ có thời hạn từ 3 tháng trở lên hoặc không xác định thời hạn.",
+    "legal_basis": [
+      "Điều 3 khoản 6"
+    ]
+  },
+  {
+    "question": "Doanh nghiệp phải báo trước bao lâu khi đến kỳ nộp phí để tiếp tục dùng dịch vụ liên tục?",
+    "answer": "Phải thông báo tối thiểu 7 ngày làm việc trước ngày hết hạn sử dụng dịch vụ theo cách thức đã thỏa thuận.",
+    "legal_basis": [
+      "Quy định về hợp đồng cung cấp dịch vụ liên tục"
+    ]
+  },
+  {
+    "question": "Người tiêu dùng có được đơn phương chấm dứt hợp đồng dịch vụ liên tục không?",
+    "answer": "Có, trừ trường hợp có thỏa thuận khác; người tiêu dùng chỉ phải thanh toán phần dịch vụ đã sử dụng.",
+    "legal_basis": [
+      "Quy định về hợp đồng cung cấp dịch vụ liên tục"
+    ]
+  },
+  {
+    "question": "Tranh chấp tiêu dùng có thể hòa giải không?",
+    "answer": "Có. Tranh chấp tiêu dùng có thể được giải quyết thông qua hòa giải bởi các tổ chức có chức năng theo luật.",
+    "legal_basis": [
+      "Điều 63"
+    ]
+  },
+  {
+    "question": "Kết quả hòa giải thành có thể yêu cầu Tòa án công nhận không?",
+    "answer": "Có. Một trong các bên có quyền yêu cầu Tòa án ra quyết định công nhận kết quả hòa giải thành.",
+    "legal_basis": [
+      "Điều 66"
+    ]
+  },
+  {
+    "question": "Điều khoản trọng tài trong hợp đồng tiêu dùng có hiệu lực khi nào?",
+    "answer": "Doanh nghiệp phải thông báo về điều khoản trọng tài trước khi giao kết hợp đồng và được người tiêu dùng chấp thuận.",
+    "legal_basis": [
+      "Điều 67 khoản 1"
+    ]
+  },
+  {
+    "question": "Nếu điều khoản trọng tài nằm trong hợp đồng mẫu thì người tiêu dùng có bị buộc chỉ được giải quyết bằng trọng tài không?",
+    "answer": "Không. Người tiêu dùng vẫn có quyền lựa chọn phương thức giải quyết tranh chấp khác.",
+    "legal_basis": [
+      "Điều 67 khoản 2"
+    ]
+  },
+  {
+    "question": "Tranh chấp tiêu dùng thì người tiêu dùng có phải tự chứng minh lỗi của doanh nghiệp không?",
+    "answer": "Người tiêu dùng không phải chứng minh lỗi của doanh nghiệp; doanh nghiệp phải chứng minh mình không có lỗi gây ra thiệt hại.",
+    "legal_basis": [
+      "Điều 69"
+    ]
+  },
+  {
+    "question": "Vụ án tiêu dùng dưới 100 triệu đồng có thể giải quyết theo thủ tục rút gọn không?",
+    "answer": "Có. Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng được giải quyết theo thủ tục rút gọn theo luật.",
+    "legal_basis": [
+      "Điều 70 khoản 2"
+    ]
+  },
+  {
+    "question": "Ngày Quyền của người tiêu dùng Việt Nam là ngày nào?",
+    "answer": "Ngày 15 tháng 3 hằng năm là Ngày Quyền của người tiêu dùng Việt Nam.",
+    "legal_basis": [
+      "Điều 13"
+    ]
+  }
+]

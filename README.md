@@ -96,16 +96,17 @@ docker compose up -d
 
 ---
 
-## 4. Luồng Hoạt Động (Tiêu chuẩn Advanced RAG)
-Nếu muốn nghiên cứu mã nguồn, hãy xem ở `app/services/rag_service.py` với 7 trạm kiểm duyệt dữ liệu đỉnh cao:
+## 4. Luồng Hoạt Động (Tiêu chuẩn Advanced RAG 2.0)
+Nếu muốn nghiên cứu mã nguồn, hãy xem ở `app/services/rag_service.py` với các chốt chặn xử lý dữ liệu:
 
-1. **Pre-Retrieval (Multi-Query Expansion):** Hệ thống chọc vào API Gemini sinh 3 biến thể pháp lý của câu hỏi gốc để bọc lót lỗi dùng từ tiếng lóng của User.
-2. **Batch Embedding:** Code nhúng gộp cục bộ (4 câu liền 1 lúc) để không ép xung phần cứng CPU.
-3. **Parallel Search:** Bắn lên Qdrant thu về 4 luồng ứng viên.
-4. **Deduplication (Trị trùng lặp):** Lọc mảng bằng hàm Hashing tự nhiên (ngăn ngừa các biến thể gom về cùng 1 luật).
-5. **Cross-Encoder Reranking:** Từ 40 điều luật rác, mô hình lọc lõi chỉ chọn đúng Top 5 điều luật xuất sắc nhất.
-6. **Bottom-Bound Prompting:** Các tài liệu Luật tìm được sẽ bị đính khống chế vào mẩu tin nhắn mới nhất nhằm trị bệnh Context Bleeding (LLM ngáo khi trộn History).
-7. **Realtime SSE Streaming:** Đẩy chữ liên tục ra API để Streamlit in từng ký tự cho User xem mà không bị nghẽn (Zero Perceived Latency).
+1. **Semantic Caching (Bộ Nhớ Đệm Ngữ Nghĩa):** Trước khi chạy truy vấn, hệ thống kiểm tra kho Cache nhúng bằng vector ngữ nghĩa. Giúp trả kết quả cực nhanh (~0.01 giây), bỏ qua toàn bộ RAG lõi tốn CPU.
+2. **Hybrid Search (Tìm Kiếm Lai Cao Cấp):** Kết hợp đồng thời 2 công nghệ: Vector Dense (BGE-M3) để hiểu ngữ cảnh sâu + Vector Sparse (BM25 - FastEmbed) để ráp chính xác từ khoá khó. Ghép lại bằng thuật toán nạp chồng RRF (Reciprocal Rank Fusion).
+3. **Selective Query Rewriting (Viết lại Câu Hỏi Có Chọn Lọc):**
+   - **Fast Path (Đường trơn):** Tìm nhấp nháy 1 lần. Nếu Reranker chấm điểm > 0.8 (Tính theo Sigmoid Model), lập tức trả về (Bỏ qua Gemini nhọc nhằn).
+   - **Heavy Path (Đường cày):** Chỉ mở Gemini để sinh 3 câu đồng nghĩa (Multi-Query) khi độ chính xác đường trơn quá thấp. Tránh lãng phí Token vô tội vạ.
+4. **Selective Reranking (Lọc Xếp Hạng Thông Minh):** Vắt kiệt lại 15 mảnh tin cậy nhất từ bộ lọc Hybrid RRF, và chỉ đưa 15 mẫu này cho Cross-Encoder chấm lại điểm chuẩn xác tuyệt đối, tiết kiệm tối đa RAM so với Rerank toàn bộ.
+5. **Generative Evaluation Data (Dữ Liệu Đánh Giá):** Đã xây dựng sẵn một bộ đánh giá kiểm thử tiêu chuẩn **Golden Set 90 Items** (`evaluate/golden_set_luat_chatbot_90_items.json`). Bộ dữ liệu thiết kế có đối chiếu Căn cứ, hỗ trợ phục vụ cho việc chấm điểm Pipeline Retrieval sau này.
+6. **Realtime SSE Streaming:** Đẩy chữ liên tục ra API để Streamlit in từng ký tự cho User xem mà không bị nghẽn (Zero Perceived Latency).
 
 ---
 

@@ -12,6 +12,7 @@ qdrant-client
 # ML models
 sentence-transformers
 huggingface-hub
+fastembed
 google-genai
 
 # Config

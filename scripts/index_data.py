@@ -49,15 +49,17 @@ def main():
     for i in range(0, len(chunks), BATCH_SIZE):
         batch = chunks[i:i + BATCH_SIZE]
         texts = [chunk["context"] for chunk in batch]
-        vectors = embed_batch(texts)
+        # Bật Sparse=True để lấy Multi-vector
+        vectors = embed_batch(texts, return_sparse=True)
 
         points = [
             PointStruct(
-                id=str(uuid.uuid4()),   # tránh trùng id
-                vector=vector,
+                id=str(uuid.uuid4()),
+                # Đẩy 2 Vector vào Data Model dạng Dict
+                vector={"dense": d_vec, "sparse": s_vec},
                 payload=chunk,
             )
-            for chunk, vector in zip(batch, vectors)
+            for chunk, (d_vec, s_vec) in zip(batch, vectors)
         ]
 
         upsert(points)
