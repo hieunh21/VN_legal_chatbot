@@ -73,9 +73,10 @@ if query := st.chat_input("Nhập câu hỏi về pháp luật..."):
     sources: list = []
     with st.chat_message("assistant"):
         try:
-            full_text = st.write_stream(
-                stream_response(st.session_state.session_id, query, sources)
-            )
+            with st.spinner("Đang suy nghĩ..."):
+                full_text = st.write_stream(
+                    stream_response(st.session_state.session_id, query, sources)
+                )
         except Exception:
             st.error("Lỗi kết nối API. Hãy kiểm tra server FastAPI.")
             full_text = ""
