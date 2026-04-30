@@ -77,12 +77,13 @@ docker compose up -d
 *Các địa chỉ mặc định: Qdrant `http://localhost:6333` | Postgres `localhost:5432` | pgAdmin `http://localhost:5050`*
 
 ### Bước 4: Chuẩn bị Dữ liệu Luật (Làm 1 lần)
-1. Đảm bảo các file `.json` điều luật đã nằm trong file map ở `scripts/index_data.py`.
+1. Đảm bảo các file `.json` điều luật đã nằm trong file map ở `scripts/index_data.py` băng cách chạy 2 notebooks: data_process_luat_giao_thong.ipynb va data_process_luat_tieu_dung.ipynb.
 2. Nạp schema bảng Chat vào PostgresSQL: `python -m scripts.init_db`
 3. Vector (Embed) đẩy vào Qdrant: `python -m scripts.index_data`
+4. `python -m scripts.seed_cache`
 
 ### Bước 5: Kích hoạt Hệ thống Hai Lớp
-- **Bật Backend (Terminal 1):**
+- **Bật Backend (Terminal 1) (nhớ `activate` venv):**
   ```powershell
   uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
   ```
