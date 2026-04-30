@@ -53,8 +53,8 @@ logs/
 # Generated data exports
 output_qdrant_ready.json
 output_qdrant_ready_*.json
-data_processing/output_qdrant_ready.json
-data_processing/output_qdrant_ready_*.json
+data_processing/output_optimized_giao_thong
+data_processing/output_optimized_tieu_dung
 
 # Streamlit local config
 .streamlit/

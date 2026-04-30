@@ -13,8 +13,11 @@ def generate(messages: list[dict]) -> str:
         model=settings.hf_model_id,
         messages=messages,
         max_tokens=1024,
+        temperature=0.01,
     )
-    return response.choices[0].message.content
+    if getattr(response, "choices", None) and len(response.choices) > 0:
+        return response.choices[0].message.content
+    return ""
 
 
 def generate_stream(messages: list[dict]) -> Iterator[str]:
@@ -23,8 +26,10 @@ def generate_stream(messages: list[dict]) -> Iterator[str]:
         model=settings.hf_model_id,
         messages=messages,
         max_tokens=1024,
+        temperature=0.01,
         stream=True,
     ):
-        token = chunk.choices[0].delta.content
-        if token:
-            yield token
+        if getattr(chunk, "choices", None) and len(chunk.choices) > 0:
+            token = chunk.choices[0].delta.content
+            if token:
+                yield token

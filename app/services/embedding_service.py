@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 from fastembed import SparseTextEmbedding
 from config.settings import settings
 
-model = SentenceTransformer(settings.embedding_model)
+model = SentenceTransformer(settings.embedding_model, device="cpu")
 sparse_model = SparseTextEmbedding(model_name="Qdrant/bm25")
 
 
