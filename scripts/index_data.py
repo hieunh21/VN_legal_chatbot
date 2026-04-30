@@ -15,8 +15,8 @@ from app.services.embedding_service import embed_batch
 from app.vector_store.qdrant_store import ensure_collection, upsert
 
 DATA_PATHS = [
-    r"data_processing\output_qdrant_ready_luat_giao_thong_new.json",
-    r"data_processing\output_qdrant_ready_luat_tieu_dung_new.json",
+    r"E:\VN-legal-chatbot\data_processing\output_optimized_tieu_dung.json",
+    r"E:\VN-legal-chatbot\data_processing\output_optimized_giao_thong.json"
 ]
 
 BATCH_SIZE = 32

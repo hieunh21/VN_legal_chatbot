@@ -12,7 +12,7 @@ class Settings(BaseSettings):
 
     # HuggingFace
     hf_api_token: str = ""
-    hf_model_id: str = "mistralai/Mistral-7B-Instruct-v0.3"
+    hf_model_id: str = ""
 
     # Gemini
     gemini_api_key: str = ""
@@ -23,5 +23,7 @@ class Settings(BaseSettings):
 
     model_config = {"env_file": ".env"}
 
+    #Evaluate 
+    shopaikey_api_key: str = ""
 
 settings = Settings()

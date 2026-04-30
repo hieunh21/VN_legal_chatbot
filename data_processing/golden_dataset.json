@@ -1,0 +1,302 @@
+[
+  {
+    "query": "Trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét có được ngồi cùng hàng ghế với người lái xe ô tô không?",
+    "expected_article": "Điều 10. Quy tắc chung",
+    "expected_answer": "Không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Giao xe cơ giới cho người không đủ điều kiện điều khiển có vi phạm pháp luật không?",
+    "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "expected_answer": "Nghiêm cấm giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Thứ tự ưu tiên chấp hành báo hiệu đường bộ được quy định như thế nào?",
+    "expected_article": "Điều 11. Chấp hành báo hiệu đường bộ",
+    "expected_answer": "Thứ tự ưu tiên từ trên xuống dưới: (1) Hiệu lệnh của người điều khiển giao thông; (2) Tín hiệu đèn giao thông; (3) Biển báo hiệu đường bộ; (4) Vạch kẻ đường; (5) Cọc tiêu, rào chắn...; (6) Thiết bị âm thanh.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi nào người lái xe được phép vượt xe về bên phải?",
+    "expected_article": "Điều 14. Vượt xe và nhường đường cho xe xin vượt",
+    "expected_answer": "Được vượt về bên phải khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái, hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Người lái xe có được phép quay đầu xe trong hầm đường bộ không?",
+    "expected_article": "Điều 15. Chuyển hướng xe",
+    "expected_answer": "Không được quay đầu xe trong hầm đường bộ, trừ khi có hiệu lệnh của người điều khiển giao thông hoặc chỉ dẫn của biển báo hiệu tạm thời.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Lùi xe trên đường một chiều có vi phạm Luật Trật tự, an toàn giao thông không?",
+    "expected_article": "Điều 16. Lùi xe",
+    "expected_answer": "Có. Pháp luật quy định không được lùi xe ở đường một chiều.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi hai xe đi ngược chiều tránh nhau ở đường dốc, xe nào phải nhường đường?",
+    "expected_article": "Điều 17. Tránh xe đi ngược chiều",
+    "expected_answer": "Xe xuống dốc phải nhường đường cho xe lên dốc.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Theo Luật Trật tự an toàn giao thông, dừng xe được hiểu là gì?",
+    "expected_article": "Điều 18. Dừng xe, đỗ xe",
+    "expected_answer": "Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Trên đường phố hẹp, xe đỗ phải cách xe đang đỗ ngược chiều tối thiểu bao nhiêu mét?",
+    "expected_article": "Điều 18. Dừng xe, đỗ xe",
+    "expected_answer": "Phải cách xe ô tô đang đỗ ngược chiều tối thiểu 20 mét trên đường phố hẹp.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khoảng thời gian nào bắt buộc phải bật đèn chiếu sáng phía trước đối với phương tiện tham gia giao thông?",
+    "expected_article": "Điều 20. Sử dụng đèn",
+    "expected_answer": "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Trong khu đông dân cư từ 22 giờ đêm đến 5 giờ sáng, có được dùng còi để xin vượt không?",
+    "expected_article": "Điều 14. Vượt xe và nhường đường cho xe xin vượt",
+    "expected_answer": "Không được dùng còi. Trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư chỉ được báo hiệu xin vượt bằng đèn.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ hướng nào?",
+    "expected_article": "Điều 22. Nhường đường tại nơi đường giao nhau",
+    "expected_answer": "Phải nhường đường cho xe đi đến từ bên phải.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi qua phà, xe chở khách công cộng có được ưu tiên hơn xe chở thực phẩm tươi sống không?",
+    "expected_article": "Điều 23. Qua phà, qua cầu phao",
+    "expected_answer": "Không. Theo thứ tự ưu tiên, xe chở thực phẩm tươi sống được qua trước xe chở khách công cộng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Ùn tắc giao thông đường bộ được định nghĩa như thế nào?",
+    "expected_article": "Điều 2. Giải thích từ ngữ",
+    "expected_answer": "Là tình trạng người, phương tiện tham gia giao thông đường bộ bị dồn ứ, di chuyển với tốc độ rất chậm hoặc không thể di chuyển được.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Cải tạo xe ô tô loại khác thành xe ô tô chở người có bị cấm không?",
+    "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "expected_answer": "Có. Nghiêm cấm cải tạo xe ô tô loại khác thành xe ô tô chở người, trừ trường hợp phục vụ mục đích quốc phòng, an ninh.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Người tiêu dùng có nghĩa vụ gì khi phát hiện hàng hóa không bảo đảm an toàn trên thị trường?",
+    "expected_article": "Điều 5. Nghĩa vụ của người tiêu dùng",
+    "expected_answer": "Thông tin kịp thời, chính xác cho cơ quan nhà nước, tổ chức, cá nhân có liên quan khi phát hiện sản phẩm, hàng hóa, dịch vụ lưu hành trên thị trường không bảo đảm an toàn.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tổ chức kinh doanh có được phép ép buộc người tiêu dùng thanh toán cho sản phẩm không có thỏa thuận trước không?",
+    "expected_article": "Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng",
+    "expected_answer": "Không. Hành vi ép buộc người tiêu dùng thanh toán cho sản phẩm, hàng hóa, dịch vụ đã cung cấp mà không có thỏa thuận trước bị nghiêm cấm.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Người tiêu dùng dễ bị tổn thương bao gồm những đối tượng nào?",
+    "expected_article": "Điều 8. Bảo vệ quyền lợi người tiêu dùng dễ bị tổn thương",
+    "expected_answer": "Bao gồm: Người cao tuổi, người khuyết tật, trẻ em, người dân tộc thiểu số, phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi, người bị bệnh hiểm nghèo và thành viên hộ nghèo.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tổ chức kinh doanh có được thu thập thông tin người tiêu dùng mà không cần thông báo trước không?",
+    "expected_article": "Điều 17. Thông báo khi thu thập, sử dụng thông tin của người tiêu dùng",
+    "expected_answer": "Phải thông báo rõ ràng, công khai trước khi thực hiện và phải được sự đồng ý, trừ trường hợp thu thập thông tin đã được người tiêu dùng công khai hoặc pháp luật quy định khác.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Sản phẩm có khuyết tật nhóm A theo quy định pháp luật được hiểu như thế nào?",
+    "expected_article": "Điều 33. Thu hồi sản phẩm, hàng hóa có khuyết tật",
+    "expected_answer": "Sản phẩm, hàng hóa có khuyết tật nhóm A là sản phẩm, hàng hóa có khả năng gây thiệt hại cho tính mạng, sức khỏe của người tiêu dùng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tổ chức kinh doanh được miễn trách nhiệm bồi thường thiệt hại do hàng hóa có khuyết tật trong trường hợp nào?",
+    "expected_article": "Điều 35. Miễn trách nhiệm bồi thường thiệt hại do sản phẩm, hàng hóa có khuyết tật gây ra",
+    "expected_answer": "Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Trong giao dịch từ xa, nếu tổ chức kinh doanh cung cấp thông tin không đầy đủ, người tiêu dùng có quyền đơn phương chấm dứt hợp đồng trong bao lâu?",
+    "expected_article": "Điều 38. Giao kết hợp đồng trong giao dịch từ xa",
+    "expected_answer": "Trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng đã giao kết.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi có tranh chấp liên quan đến lợi ích quốc gia, có được giải quyết thông qua thương lượng, hòa giải không?",
+    "expected_article": "Điều 54. Phương thức giải quyết tranh chấp giữa người tiêu dùng và tổ chức, cá nhân kinh doanh",
+    "expected_answer": "Không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi nội dung hợp đồng theo mẫu có sự hiểu khác nhau, việc giải thích hợp đồng sẽ nghiêng về bên nào?",
+    "expected_article": "Điều 24. Giải thích hợp đồng giao kết với người tiêu dùng, hợp đồng theo mẫu, điều kiện giao dịch chung",
+    "expected_answer": "Việc giải thích được thực hiện theo hướng có lợi cho người tiêu dùng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Khi tổ chức kinh doanh thay thế linh kiện, thời hạn bảo hành của linh kiện đó tính như thế nào?",
+    "expected_article": "Điều 30. Bảo hành sản phẩm, hàng hóa, linh kiện, phụ kiện",
+    "expected_answer": "Thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tổ chức bán hàng đa cấp có bắt buộc phải xuất hóa đơn khi giao dịch không?",
+    "expected_article": "Điều 45. Trách nhiệm của tổ chức, cá nhân bán hàng đa cấp",
+    "expected_answer": "Có. Tổ chức bán hàng đa cấp có trách nhiệm xuất hóa đơn theo từng giao dịch bán hàng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Cá nhân hoạt động thương mại độc lập, không đăng ký kinh doanh có trách nhiệm đổi trả hàng hóa không?",
+    "expected_article": "Điều 9. Bảo vệ quyền lợi người tiêu dùng trong giao dịch với cá nhân hoạt động thương mại độc lập, thường xuyên, không phải đăng ký kinh doanh",
+    "expected_answer": "Có. Phải đổi hàng hoặc trả lại tiền nếu hàng hóa do mình bán không bảo đảm an toàn, đo lường, chất lượng như thông tin mình cung cấp.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Ngày Quyền của người tiêu dùng Việt Nam là ngày nào?",
+    "expected_article": "Điều 13. Ngày Quyền của người tiêu dùng Việt Nam",
+    "expected_answer": "Ngày 15 tháng 3 hằng năm là Ngày Quyền của người tiêu dùng Việt Nam.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục nào?",
+    "expected_article": "Điều 70. Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng",
+    "expected_answer": "Được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tổ chức, cá nhân kinh doanh có được phép loại trừ quyền khởi kiện của người tiêu dùng trong hợp đồng mẫu không?",
+    "expected_article": "Điều 25. Điều khoản không được phép quy định trong hợp đồng giao kết với người tiêu dùng, hợp đồng theo mẫu, điều kiện giao dịch chung",
+    "expected_answer": "Không. Nghiêm cấm quy định điều khoản hạn chế, loại trừ quyền khiếu nại, khởi kiện của người tiêu dùng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Mấy cái camera thông minh hay thiết bị điện tử cảnh sát dùng trên đường là để làm gì?",
+    "expected_article": "Điều 2. Giải thích từ ngữ",
+    "expected_answer": "Do lực lượng chức năng sử dụng để hỗ trợ chỉ huy, điều khiển giao thông đường bộ, giải quyết tình huống và xử lý vi phạm pháp luật trên đường bộ.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Cứ vi phạm luật giao thông là bắt buộc phải bị xử phạt đúng không?",
+    "expected_article": "Điều 3. Nguyên tắc bảo đảm trật tự, an toàn giao thông đường bộ",
+    "expected_answer": "Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Hôm trước tôi giúp công an bắt người vi phạm giao thông mà bị thương, vậy có được nhà nước hỗ trợ chi phí hay đền bù gì không?",
+    "expected_article": "Điều 4. Chính sách của Nhà nước về trật tự, an toàn giao thông đường bộ",
+    "expected_answer": "Người bị thương, bị tổn hại về sức khỏe, tính mạng thì bản thân, gia đình được hưởng chế độ, chính sách theo quy định của pháp luật.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Báo chí và đài truyền hình có trách nhiệm gì trong việc tuyên truyền luật giao thông không nhỉ?",
+    "expected_article": "Điều 5. Tuyên truyền, phổ biến pháp luật về trật tự, an toàn giao thông",
+    "expected_answer": "Có trách nhiệm tổ chức tuyên truyền, phổ biến pháp luật về trật tự, an toàn giao thông đường bộ trên các phương tiện thông tin, truyền thông đại chúng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Thông tin vi phạm giao thông của tôi có bị liên thông với cơ sở dữ liệu dân cư quốc gia không?",
+    "expected_article": "Điều 7. Cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ",
+    "expected_answer": "Có. Đây là cơ sở dữ liệu dùng chung; được kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về dân cư, Cơ sở dữ liệu đường bộ và các cơ sở dữ liệu khác có liên quan.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tôi đứng xem với hò hét cổ vũ tụi nó đua xe trên phố thì có vi phạm pháp luật không?",
+    "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "expected_answer": "Có. Nghiêm cấm đua xe, tổ chức đua xe, xúi giục, giúp sức, cổ vũ đua xe trái phép.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Tua lại đồng hồ công tơ mét xe ô tô cũ cho số km ít đi trước khi bán lại có phạm luật không?",
+    "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "expected_answer": "Có. Hành vi cố ý can thiệp làm sai lệch chỉ số trên đồng hồ báo quãng đường đã chạy của xe ô tô bị nghiêm cấm.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Dán băng dính che bớt một con số trên biển số xe máy để tránh phạt nguội thì có bị cấm không?",
+    "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "expected_answer": "Có. Pháp luật nghiêm cấm bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Ngồi ở hàng ghế sau của xe ô tô có bắt buộc phải thắt dây an toàn không?",
+    "expected_article": "Điều 10. Quy tắc chung",
+    "expected_answer": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Thấy đèn giao thông chuyển sang màu đỏ thì phải làm sao?",
+    "expected_article": "Điều 11. Chấp hành báo hiệu đường bộ",
+    "expected_answer": "Tín hiệu đèn màu đỏ là cấm đi.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Vạch kẻ màu trắng trên mặt đường dùng để làm gì vậy?",
+    "expected_article": "Điều 11. Chấp hành báo hiệu đường bộ",
+    "expected_answer": "Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Mình đi xe máy chậm rì rề trên đường thì phải đi sát lề bên nào cho đúng luật?",
+    "expected_article": "Điều 13. Sử dụng làn đường",
+    "expected_answer": "Phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi về bên phải theo chiều đi của mình.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Xe đằng sau bấm còi xin vượt, đường phía trước thì đang thoáng, mình phải làm gì?",
+    "expected_article": "Điều 14. Vượt xe và nhường đường cho xe xin vượt",
+    "expected_answer": "Phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Đến ngã tư không có vòng xuyến thì ai phải nhường đường cho ai?",
+    "expected_article": "Điều 22. Nhường đường tại nơi đường giao nhau",
+    "expected_answer": "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Pháp luật định nghĩa thế nào là hình thức bán hàng đa cấp?",
+    "expected_article": "Điều 3. Giải thích từ ngữ",
+    "expected_answer": "Là hoạt động bán hàng hóa thông qua mạng lưới cá nhân tham gia gồm nhiều cấp, nhiều nhánh, trong đó cá nhân tham gia được hưởng hoa hồng, tiền thưởng và lợi ích kinh tế khác từ kết quả bán hàng hóa của mình và của cá nhân khác trong mạng lưới.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Quảng cáo ghi một đằng nhưng cung cấp dịch vụ một nẻo thì khách hàng có được bồi thường không?",
+    "expected_article": "Điều 4. Quyền của người tiêu dùng",
+    "expected_answer": "Có. Người tiêu dùng có quyền yêu cầu tổ chức, cá nhân kinh doanh bồi thường thiệt hại khi sản phẩm, hàng hóa, dịch vụ không đúng với đăng ký, quảng cáo, giới thiệu, giao kết, cam kết.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Nhà nước hay doanh nghiệp phải chịu trách nhiệm chính trong việc bảo vệ quyền lợi cho người tiêu dùng?",
+    "expected_article": "Điều 6. Nguyên tắc bảo vệ quyền lợi người tiêu dùng",
+    "expected_answer": "Bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Nếu cửa hàng không ưu tiên giải quyết khiếu nại cho phụ nữ có thai thì có phải đền bù gì không?",
+    "expected_article": "Điều 8. Bảo vệ quyền lợi người tiêu dùng dễ bị tổn thương",
+    "expected_answer": "Có. Tổ chức, cá nhân kinh doanh phải bồi thường thiệt hại theo quy định của pháp luật về dân sự cho người tiêu dùng dễ bị tổn thương trong trường hợp chậm, từ chối ưu tiên hoặc từ chối tiếp nhận, xử lý yêu cầu.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Shipper giao hàng mà tráo hàng dỏm vào hộp thì có vi phạm luật bảo vệ người tiêu dùng không?",
+    "expected_article": "Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng",
+    "expected_answer": "Có. Nghiêm cấm hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng.",
+    "is_in_scope": true
+  },
+  {
+    "query": "Công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động thì có sao không?",
+    "expected_article": "Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng",
+    "expected_answer": "Có. Tổ chức, cá nhân bị nghiêm cấm kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp.",
+    "is_in_scope": true
+  }
+]

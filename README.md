@@ -59,7 +59,7 @@ QDRANT_COLLECTION=legal_chunks
 
 # LLM Sinh văn bản (Qwen)
 HF_API_TOKEN=your_hugginface_token
-HF_MODEL_ID=Qwen/Qwen2.5-7B-Instruct
+HF_MODEL_ID=Qwen/Qwen2.5-72B-Instruct
 
 # Tác nhân Pre-retrieval Multi-Query (Mở rộng câu hỏi)
 GEMINI_API_KEY=your_gemini_api_key

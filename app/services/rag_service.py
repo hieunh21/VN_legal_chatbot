@@ -1,73 +1,124 @@
 import json
+import math
 from collections.abc import Iterator
-
+import re
 from app.models.message import Message
 from app.services import embedding_service, llm_service, reranker_service, gemini_service
 from app.vector_store import qdrant_store
 
-SYSTEM_PROMPT = (
-    "Bạn là trợ lý pháp luật Việt Nam. "
-    "Nhiệm vụ của bạn là giải đáp thắc mắc pháp lý của người dùng một cách chính xác, ngắn gọn và dễ hiểu."
-)
+SYSTEM_PROMPT = """Bạn là trợ lý tra cứu pháp luật Việt Nam, chuyên về Luật Trật tự an toàn giao thông đường bộ 2024 và Luật Bảo vệ quyền lợi người tiêu dùng 2023.
 
+## Nguyên tắc trả lời
+- Chỉ trả lời dựa trên nội dung điều luật được cung cấp trong ngữ cảnh bên dưới.
+- Nếu ngữ cảnh không có thông tin liên quan, trả lời đúng một câu: "Tôi không tìm thấy thông tin về vấn đề này trong cơ sở dữ liệu."
+- Tuyệt đối không suy diễn, không bổ sung thông tin từ kiến thức bên ngoài ngữ cảnh.
 
-import math
+## Trích dẫn điều luật
+- Chỉ trích dẫn khi ngữ cảnh có ghi rõ tên luật, số điều, số khoản.
+- Chép nguyên văn số điều, số khoản từ ngữ cảnh — không được tự suy ra hay điều chỉnh con số.
+- Nếu ngữ cảnh không ghi rõ số khoản, chỉ trích dẫn tên điều, không được tự thêm "khoản X" hay "điểm Y".
+
+## Format trả lời
+- Ngắn gọn, trực tiếp vào câu hỏi, không lan man.
+- Dùng ngôn ngữ đơn giản, dễ hiểu."""
+
 
 def _format_sources(top_chunks: list[dict]) -> list[dict]:
     sources = []
     for c in top_chunks:
-        # Chuyển đổi rerank_score (logits) sang % (sigmoid)
         score = c.get("rerank_score", 0.0)
         relevance = round((1 / (1 + math.exp(-score))) * 100, 1)
         sources.append({
-            "title": c.get("title", ""),
-            "article": c.get("article", ""),
-            "chapter": c.get("chapter", ""),
-            "relevance": relevance
+            "title"    : c.get("title", ""),
+            "article"  : c.get("article", ""),
+            "chapter"  : c.get("chapter", ""),
+            "law_name" : c.get("law_name", ""),
+            "relevance": relevance,
+            "content"  : c.get("context", "")
         })
     return sources
 
 
-def _retrieve(query: str, query_vector: list[float] = None) -> tuple[list[dict], list[dict]]:
+def _build_context(top_chunks: list[dict]) -> str:
+    parts = []
+    for c in top_chunks:
+        law_name = c.get("law_name", "")
+        article  = c.get("article", "")
+        title    = c.get("title", "")
+        content  = c.get("context", "")
+
+        # Thay "1. " → "Khoản 1. " để LLM không nhầm với số điều
+        content = re.sub(r'^(\d+)\.\s', r'Khoản \1. ', content, flags=re.MULTILINE)
+
+        # Thêm "Điểm" trước ký tự a), b), c)...: "a) " → "Điểm a) "
+        content = re.sub(r'^([a-zđ])\)\s', r'Điểm \1) ', content, flags=re.MULTILINE)
+
+        if law_name and article:
+            header = f"[Nguồn: {law_name} — {article}]"
+        else:
+            header = f"[{title}]"
+
+        parts.append(f"{header}\n{content}")
+    return "\n\n---\n\n".join(parts)
+
+
+def _rewrite_query(query: str, history: list[Message]) -> str:
+    """
+    Dùng Gemini viết lại câu hỏi mơ hồ thành câu hỏi độc lập.
+    Chỉ gọi khi có history — câu đầu tiên không cần rewrite.
+    """
+    if not history:
+        return query
+
+    # Trích xuất 4 tin nhắn gần nhất thành chuỗi văn bản cho Prompt
+    history_text = "\n".join([f"{msg.role.upper()}: {msg.content}" for msg in history[-4:]])
+    
+    rewritten = gemini_service.rewrite_query(query, history_text)
+    print(f"  [Rewrite (Gemini)] '{query}' → '{rewritten}'")
+    return rewritten
+
+
+def _retrieve(query: str, history: list[Message] = None, enable_multi_query: bool = True) -> tuple[list[dict], list[dict]]:
     """Selective Query Rewriting & Selective Reranking with Hybrid Search."""
-    
-    # Sinh song song Dense và Sparse Vector cho câu hỏi gốc
-    dense_vec, sparse_vec = embedding_service.embed(query, return_sparse=True)
-        
+
+    search_query = _rewrite_query(query, history or [])
+
+    dense_vec, sparse_vec = embedding_service.embed(search_query, return_sparse=True)
+
     # ==========================================
-    # ROUTE 1: FAST PATH (Đường trơn)
+    # ROUTE 1: FAST PATH
     # ==========================================
-    fast_candidates = qdrant_store.search(dense_vector=dense_vec, sparse_vector=sparse_vec, top_k=5)
-    fast_top_chunks = reranker_service.rerank(query, fast_candidates, top_n=5)
-    
-    # Đo nhiệt độ tin cậy từ Sigmoid Reranker
-    highest_score = fast_top_chunks[0].get("rerank_score", 0.0) if fast_top_chunks else -10.0
+    fast_candidates = qdrant_store.search(dense_vector=dense_vec, sparse_vector=sparse_vec, top_k=10)
+    fast_top_chunks = reranker_service.rerank(search_query, fast_candidates, top_n=5)
+
+    highest_score     = fast_top_chunks[0].get("rerank_score", 0.0) if fast_top_chunks else -10.0
     highest_relevance = (1 / (1 + math.exp(-highest_score))) * 100
-    
-    if highest_relevance >= 80.0:
-        print(f"\n[FAST PATH] Tìm thấy đoạn luật quá khớp (Trust = {highest_relevance:.1f}%). Bỏ qua hoàn toàn thuật toán Gemini!")
+
+    if highest_relevance >= 80.0 or not enable_multi_query:
+        if not enable_multi_query and highest_relevance < 80.0:
+            print(f"\n[FAST PATH] Độ tin cậy thấp ({highest_relevance:.1f}%) nhưng Gemini ĐÃ BỊ TẮT.")
+        else:
+            print(f"\n[FAST PATH] Trust = {highest_relevance:.1f}%. Bỏ qua Gemini!")
         return fast_top_chunks, _format_sources(fast_top_chunks)
-        
+
     # ==========================================
-    # ROUTE 2: HEAVY PATH (Đường hiểm trở)
+    # ROUTE 2: HEAVY PATH
     # ==========================================
-    print(f"\n[HEAVY PATH] Câu hỏi hóc búa (Trust = {highest_relevance:.1f}%) -> Kích hoạt Gemini và Đào bới diện rộng...")
-    
-    variations = gemini_service.generate_multi_queries(query)
-    
-    print("\n" + "="*50)
-    print("GEMINI ĐÃ MỞ RỘNG CÂU HỎI THÀNH CÁC BIẾN THỂ:")
+    print(f"\n[HEAVY PATH] Trust = {highest_relevance:.1f}% -> Kích hoạt Gemini...")
+
+    variations  = gemini_service.generate_multi_queries(search_query)
+    all_queries = [search_query] + variations
+
+    print("\n" + "=" * 50)
+    print("GEMINI MỞ RỘNG CÂU HỎI:")
     for i, var in enumerate(variations):
-        print(f" {i+1}. {var}")
-    print("="*50 + "\n")
+        print(f"  {i+1}. {var}")
+    print("=" * 50 + "\n")
 
-    all_queries = [query] + variations
-
-    # Tạo vector hàng loạt (Cả Dense và Sparse)
     query_vectors = embedding_service.embed_batch(all_queries, return_sparse=True)
 
     all_candidates = []
-    seen_texts = set()
+    seen_texts     = set()
 
     for d_vec, s_vec in query_vectors:
         results = qdrant_store.search(dense_vector=d_vec, sparse_vector=s_vec, top_k=8)
@@ -77,74 +128,72 @@ def _retrieve(query: str, query_vector: list[float] = None) -> tuple[list[dict],
                 seen_texts.add(chunk_content)
                 all_candidates.append(r)
 
-    # => TÍNH NĂNG MỚI: SELECTIVE RERANKING
-    # Sắp xếp sơ bộ bằng độ đo Cosine (Càng gần 1.0 càng tốt)
     all_candidates.sort(key=lambda x: x.get("score", 0.0), reverse=True)
-    # Vứt 25 cục rác thấp nhất đi, chỉ lấy 15 cục Qdrant điểm cao đầu bảng cho Reranker chạy
-    top_15_candidates = all_candidates[:15]
+    top_8_candidates  = all_candidates[:8]
+    heavy_top_chunks  = reranker_service.rerank(search_query, top_8_candidates, top_n=5)
 
-    heavy_top_chunks = reranker_service.rerank(query, top_15_candidates, top_n=5)
-    
     return heavy_top_chunks, _format_sources(heavy_top_chunks)
-
-
-
 
 
 def _build_messages(query: str, history: list[Message], context: str) -> list[dict]:
     """Build the prompt message list for the LLM."""
     msgs = [{"role": "system", "content": SYSTEM_PROMPT}]
-    
-    # 1. Đưa lịch sử trò chuyện vào
+
     for msg in history[-10:]:
         msgs.append({"role": msg.role, "content": msg.content})
-        
-    # 2. Đóng gói Context và Query chung vào tin nhắn cuối cùng để AI không bối rối
+
     final_user_prompt = (
-        "Dựa vào các phần tài liệu tham khảo dưới đây để trả lời câu hỏi. "
-        "Nếu tài liệu không đủ thông tin, hãy nói rõ là không thấy trong tài liệu.\n\n"
-        f"--- TÀI LIỆU THAM KHẢO ---\n{context}\n\n"
-        f"--- CÂU HỎI --- \n{query}"
+    "Dưới đây là TẤT CẢ tài liệu bạn được phép dùng để trả lời. "
+    "KHÔNG được dùng bất kỳ thông tin nào ngoài những đoạn văn dưới đây, "
+    "kể cả khi bạn biết thông tin đó là đúng.\n\n"
+    "=== TÀI LIỆU ===\n"
+    f"{context}\n"
+    "=== HẾT TÀI LIỆU ===\n\n"
+    f"Câu hỏi: {query}\n\n"
+    "Nhắc lại: Chỉ được trích dẫn điều luật có trong TÀI LIỆU ở trên."
     )
     msgs.append({"role": "user", "content": final_user_prompt})
+
+    # print("\n" + "=" * 50)
+    # print("🚀 NỘI DUNG PROMPT GỬI CHO LLM:")
+    # for m in msgs:
+    #     print(f"👉 [{m['role'].upper()}]:\n{m['content']}")
+    #     print("-" * 30)
+    # print("=" * 50 + "\n")
+
     return msgs
 
 
-def answer(query: str, history: list[Message]) -> dict:
+def answer(query: str, history: list[Message], enable_multi_query: bool = True) -> dict:
     """Full RAG pipeline — non-streaming."""
-    # 1. Semantic Cache Check
-    query_vector = embedding_service.embed(query)
+    query_vector  = embedding_service.embed(query)
     cached_answer = qdrant_store.search_cache(query_vector)
     if cached_answer:
         return {"answer": cached_answer, "sources": []}
 
-    # 2. RAG Pipeline
-    top_chunks, sources = _retrieve(query, query_vector)
-    context = "\n\n".join(f"[{c.get('title', '')}]\n{c['context']}" for c in top_chunks)
+    top_chunks, sources = _retrieve(query, history, enable_multi_query=enable_multi_query)
+    context  = _build_context(top_chunks)   # ← dùng hàm mới thay vì join thẳng
     messages = _build_messages(query, history, context)
-    
-    # Generate and Save
+
     ans = llm_service.generate(messages)
-    qdrant_store.upsert_cache(query_vector, ans, query_text=query, sources=sources)
+    # Tắt lưu tự động vào cache: qdrant_store.upsert_cache(query_vector, ans, query_text=query, sources=sources)
     return {"answer": ans, "sources": sources}
 
 
-def answer_stream(query: str, history: list[Message]) -> Iterator[str]:
+def answer_stream(query: str, history: list[Message], enable_multi_query: bool = True) -> Iterator[str]:
     """Streaming RAG pipeline. Yields SSE-formatted strings."""
-    # 1. Semantic Cache Check
-    query_vector = embedding_service.embed(query)
+    query_vector  = embedding_service.embed(query)
     cached_answer = qdrant_store.search_cache(query_vector)
-    
+
     if cached_answer:
-        print("\n⚡ [CACHE HIT] Đã tìm thấy câu trả lời trong bộ nhớ đệm!\n")
+        print("\n⚡ [CACHE HIT]\n")
         yield f"data: {json.dumps({'type': 'token', 'content': cached_answer}, ensure_ascii=False)}\n\n"
         yield f"data: {json.dumps({'type': 'sources', 'sources': []}, ensure_ascii=False)}\n\n"
         yield "data: [DONE]\n\n"
         return
 
-    # 2. Normal Pipeline if Cache Miss
-    top_chunks, sources = _retrieve(query, query_vector)
-    context = "\n\n".join(f"[{c.get('title', '')}]\n{c['context']}" for c in top_chunks)
+    top_chunks, sources = _retrieve(query, history, enable_multi_query=enable_multi_query)
+    context  = _build_context(top_chunks)   # ← dùng hàm mới
     messages = _build_messages(query, history, context)
 
     full_answer_list = []
@@ -152,15 +201,13 @@ def answer_stream(query: str, history: list[Message]) -> Iterator[str]:
         full_answer_list.append(token)
         yield f"data: {json.dumps({'type': 'token', 'content': token}, ensure_ascii=False)}\n\n"
 
-    # Save final answer to cache
-    qdrant_store.upsert_cache(
-        query_vector=query_vector, 
-        answer="".join(full_answer_list), 
-        query_text=query, 
-        sources=sources
-    )
+    # Tắt lưu tự động vào cache từ chat:
+    # qdrant_store.upsert_cache(
+    #     query_vector=query_vector,
+    #     answer="".join(full_answer_list),
+    #     query_text=query,
+    #     sources=sources
+    # )
 
     yield f"data: {json.dumps({'type': 'sources', 'sources': sources}, ensure_ascii=False)}\n\n"
     yield "data: [DONE]\n\n"
-
-
