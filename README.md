@@ -67,6 +67,9 @@ GEMINI_API_KEY=your_gemini_api_key
 # Tác nhân Search
 EMBEDDING_MODEL=BAAI/bge-m3
 RERANKER_MODEL=BAAI/bge-reranker-v2-m3
+
+# Evaluation
+SHOPAIKEY_API_KEY=your_token_here
 ```
 
 ### Bước 3: Đánh thức hệ thống nền tảng
