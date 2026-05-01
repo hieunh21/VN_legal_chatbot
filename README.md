@@ -7,7 +7,7 @@
 - **Qdrant**: Vector Database tốc độ cao lưu trữ Embeddings của các bộ luật.
 - **Google GenAI (Gemini)**: Đảm nhận tầng Pre-retrieval để khôi phục ngữ cảnh (Query Rewriting dựa trên lịch sử) và mở rộng câu hỏi (Multi-Query Expansion).
 - **Sentence Transformers (Qdrant/BAAI)**: Chạy Batch Embedding và Cross-Encoder Reranking diện rộng.
-- **Hugging Face**: Kết nối `Qwen2.5-72B-Instruct` làm LLM tư duy, lý luận và trả lời cuối cùng (temperature được tinh chỉnh khắt khe để tránh ảo giác).
+- **Hugging Face**: Kết nối `Qwen/Qwen2.5-72B-Instruct` làm LLM tư duy, lý luận và trả lời cuối cùng (temperature được tinh chỉnh khắt khe để tránh ảo giác).
 
 ## 1. Cấu trúc dự án
 
