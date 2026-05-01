@@ -17,9 +17,9 @@ from app.services import rag_service
 from app.vector_store import qdrant_store
 from qdrant_client.models import Filter
 
-DATASET_PATH  = "data_processing/golden_dataset.json"
-PROGRESS_PATH = "data_processing/eval_progress.json"
-REPORT_PATH   = "data_processing/eval_report.json"
+DATASET_PATH  = "evaluate/golden_dataset.json"
+PROGRESS_PATH = "evaluate/eval_progress.json"
+REPORT_PATH   = "evaluate/eval_report.json"
 
 # ======================== SHOPAIKEY CONFIG ========================
 ai = genai.Client(

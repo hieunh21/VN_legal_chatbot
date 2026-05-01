@@ -5,9 +5,9 @@
 - **Streamlit**: Giao diện người dùng tích hợp hiệu ứng Streaming và chấm điểm "🎯 Độ phù hợp" bằng Toán Sigmoid.
 - **PostgreSQL**: Lưu trữ Lịch sử hội thoại vĩnh viễn (thiết kế chống sập DB khi ngắt kết nối).
 - **Qdrant**: Vector Database tốc độ cao lưu trữ Embeddings của các bộ luật.
-- **Google GenAI (Gemini)**: Đảm nhận tầng Pre-retrieval để viết lại truy vấn (Multi-Query Expansion).
+- **Google GenAI (Gemini)**: Đảm nhận tầng Pre-retrieval để khôi phục ngữ cảnh (Query Rewriting dựa trên lịch sử) và mở rộng câu hỏi (Multi-Query Expansion).
 - **Sentence Transformers (Qdrant/BAAI)**: Chạy Batch Embedding và Cross-Encoder Reranking diện rộng.
-- **Hugging Face**: Kết nối `Qwen2.5-7B-Instruct` làm LLM tư duy, lý luận và trả lời.
+- **Hugging Face**: Kết nối `Qwen2.5-72B-Instruct` làm LLM tư duy, lý luận và trả lời cuối cùng (temperature được tinh chỉnh khắt khe để tránh ảo giác).
 
 ## 1. Cấu trúc dự án
 
@@ -100,19 +100,33 @@ docker compose up -d
 ## 4. Luồng Hoạt Động (Tiêu chuẩn Advanced RAG 2.0)
 Nếu muốn nghiên cứu mã nguồn, hãy xem ở `app/services/rag_service.py` với các chốt chặn xử lý dữ liệu:
 
-1. **Semantic Caching (Bộ Nhớ Đệm Ngữ Nghĩa):** Trước khi chạy truy vấn, hệ thống kiểm tra kho Cache nhúng bằng vector ngữ nghĩa. Giúp trả kết quả cực nhanh (~0.01 giây), bỏ qua toàn bộ RAG lõi tốn CPU.
-2. **Hybrid Search (Tìm Kiếm Lai Cao Cấp):** Kết hợp đồng thời 2 công nghệ: Vector Dense (BGE-M3) để hiểu ngữ cảnh sâu + Vector Sparse (BM25 - FastEmbed) để ráp chính xác từ khoá khó. Ghép lại bằng thuật toán nạp chồng RRF (Reciprocal Rank Fusion).
-3. **Selective Query Rewriting (Viết lại Câu Hỏi Có Chọn Lọc):**
-   - **Fast Path (Đường trơn):** Tìm nhấp nháy 1 lần. Nếu Reranker chấm điểm > 0.8 (Tính theo Sigmoid Model), lập tức trả về (Bỏ qua Gemini nhọc nhằn).
-   - **Heavy Path (Đường cày):** Chỉ mở Gemini để sinh 3 câu đồng nghĩa (Multi-Query) khi độ chính xác đường trơn quá thấp. Tránh lãng phí Token vô tội vạ.
-4. **Selective Reranking (Lọc Xếp Hạng Thông Minh):** Vắt kiệt lại 15 mảnh tin cậy nhất từ bộ lọc Hybrid RRF, và chỉ đưa 15 mẫu này cho Cross-Encoder chấm lại điểm chuẩn xác tuyệt đối, tiết kiệm tối đa RAM so với Rerank toàn bộ.
-5. **Generative Evaluation Data (Dữ Liệu Đánh Giá):** Đã xây dựng sẵn một bộ đánh giá kiểm thử tiêu chuẩn **Golden Set 90 Items** (`evaluate/golden_set_luat_chatbot_90_items.json`). Bộ dữ liệu thiết kế có đối chiếu Căn cứ, hỗ trợ phục vụ cho việc chấm điểm Pipeline Retrieval sau này.
-6. **Realtime SSE Streaming:** Đẩy chữ liên tục ra API để Streamlit in từng ký tự cho User xem mà không bị nghẽn (Zero Perceived Latency).
+1. **Semantic Caching Chuyên Sâu:** Bộ nhớ đệm tĩnh, hiện chỉ được cấp nguồn từ dữ liệu FAQ chuẩn xác (`data/faq_seed.json`), bị khoá tự động "Save Cache" chiều từ Chatbot. Điều này tránh tình trạng "rác cache" do các câu chat ngẫu nhiên của người dùng. Trúng cache sẽ trả kết quả tức thì (~0.01s).
+2. **History-Aware Query Rewriting (Khôi phục ngữ cảnh):** Sử dụng hệ thống **Gemini** (Google) để trích xuất 4 tin nhắn gần nhất và tự động viết thông dịch các câu hỏi phụ cộc lốc/thiếu chủ ngữ của người dùng thành một câu hỏi độc lập chuẩn pháp lý.
+3. **Hybrid Search (Tìm Kiếm Lai Cao Cấp):** Kết hợp đồng thời 2 bản đồ: Vector Dense (BGE-M3) để hiểu ngữ cảnh sâu + Vector Sparse (BM25 - FastEmbed) để ráp độ tin cậy từ vựng.
+4. **Selective Multi-Query & Routing (Định tuyến chọn lọc):** 
+   - **Fast Path:** Nếu BGE Reranker chấm điểm Vector tìm được > 80%, dùng luôn tài liệu đó để sinh câu trả lời.
+   - **Heavy Path:** Nếu điểm < 80%, nhường sân cho Gemini sinh thêm 2 biến thể câu hỏi (Multi-Query Expansion) để rà quét đáy Qdrant với mẻ lưới lớn.
+5. **Selective Reranking (Lọc Xếp Hạng Thông Minh):** Vắt kiệt lại 8 mảnh tin cậy nhất từ bộ lọc Hybrid Search, và chỉ đưa 8 mẫu này cho Cross-Encoder chấm lại điểm chuẩn xác tuyệt đối, tiết kiệm tối đa RAM so với Rerank toàn bộ.
+6. **Generative Evaluation Data (Dữ Liệu Đánh Giá):** Đã xây dựng sẵn một bộ đánh giá kiểm thử tiêu chuẩn **Golden Datset** (`data_processing/golden_dataset.json`). Bộ dữ liệu thiết kế có đối chiếu Căn cứ, hỗ trợ phục vụ cho việc chấm điểm Pipeline Retrieval sau này.
+7. **Realtime SSE Streaming:** Đẩy chữ liên tục ra API để Streamlit in từng ký tự cho User xem (Zero Perceived Latency).
 
 ---
 
 ## 5. Troubleshooting (Bắt Lỗi Thường Gặp)
 
-- Lỗi **`503 UNAVAILABLE`** ở ngầm Terminal: Model Gemini đang nghẽn server, hệ thống lúc này đã kích hoạt "Fallback", chỉ nhúng 1 câu hỏi gốc và mọi thứ bảo đảm không hề bị crash!
-- Xảy ra `ModuleNotFoundError`: Chắc chắn bạn chưa Update lại file `requirements.txt`. Gõ lại `pip install -rc requirements.txt`.
+- Lỗi **`503 UNAVAILABLE`** ở ngầm Terminal: Model LLM đang nghẽn server chờ reset hoặc chưa đổi qua Model khác trong file `.env`.
+- Xảy ra `ModuleNotFoundError`: Chắc chắn bạn chưa Update lại file `requirements.txt`.
 - Dấu gạch chéo thư mục bị sai: Ở Windows, luôn xài raw string `r"C:\\..."` hoặc `/` để nạp dữ liệu từ PDF.
+
+---
+
+## 6. Hướng dẫn Chạy Thử nghiệm & Đánh giá (Evaluation)
+
+Dự án tích hợp sẵn module benchmark để chạy bài test tự động trên bộ **Golden Dataset** (file `data_processing/golden_dataset.json`). Quá trình này sẽ gọi bot trả lời 100 câu hỏi và lưu lại toàn bộ tiến độ.
+
+1. Hãy chắc chắn Backend (FastAPI) và các Server DB Docker (Qdrant, Postgres) **đang chạy**.
+2. Mở một terminal mới (đã kích hoạt `. venv/Scripts/activate`):
+   ```powershell
+   python scripts/evaluate_bot.py
+   ```
+3. Xem kết quả đánh giá (Thời gian phản hồi, số token) sẽ được lưu lại dưới dạng file JSON tại thư mục `data_processing/` (lưu tự động vào `eval_progress.json` mỗi 5 mẫu tránh crash). Khi hoàn tất toàn bộ sẽ sinh ra file `eval_report.json`. Mọi thay đổi về code ở tương lai đều có thể chạy cái lại cái report này để so sánh độ trễ!
