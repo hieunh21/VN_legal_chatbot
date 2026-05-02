@@ -2,7 +2,7 @@
 
 Đây là hệ thống Chatbot pháp luật Việt Nam được xây dựng đạt chuẩn **Advanced RAG**, tối ưu riêng cho môi trường tư vấn pháp lý với khả năng đáp ứng thời gian thực:
 - **FastAPI**: Lõi Backend API hỗ trợ Real-time Streaming (Server-Sent Events).
-- **Streamlit**: Giao diện người dùng tích hợp hiệu ứng Streaming và chấm điểm "🎯 Độ phù hợp" bằng Toán Sigmoid.
+- **Streamlit**: Giao diện người dùng tích hợp hiệu ứng Streaming và chấm điểm "Độ phù hợp" bằng Toán Sigmoid.
 - **PostgreSQL**: Lưu trữ Lịch sử hội thoại vĩnh viễn (thiết kế chống sập DB khi ngắt kết nối).
 - **Qdrant**: Vector Database tốc độ cao lưu trữ Embeddings của các bộ luật.
 - **Google GenAI (Gemini)**: Đảm nhận tầng Pre-retrieval để khôi phục ngữ cảnh (Query Rewriting dựa trên lịch sử) và mở rộng câu hỏi (Multi-Query Expansion).

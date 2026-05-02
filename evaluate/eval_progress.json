@@ -3,24 +3,24 @@
     "order": 1,
     "expected_article": "Điều 10. Quy tắc chung",
     "expected_answer": "Không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế.",
-    "actual_answer": "Theo Điều 10, Khoản 3 của Luật Trật tự, an toàn giao thông đường bộ 2024:\n\n\"Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em.\"",
+    "actual_answer": "Theo Điều 10, Khoản 3 của Luật Trật tự, an toàn giao thông đường bộ 2024, khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế. Người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 10, Khoản 3 của Luật Trật tự, an toàn giao thông đường bộ 2024",
+        "claim": "Theo Điều 10, Khoản 3 của Luật Trật tự, an toàn giao thông đường bộ 2024, khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế.",
         "supported": true
       },
       {
-        "claim": "Khi chở trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét trên xe ô tô không được cho trẻ em ngồi cùng hàng ghế với người lái xe, trừ loại xe ô tô chỉ có một hàng ghế; người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em.",
+        "claim": "Người lái xe phải sử dụng, hướng dẫn sử dụng thiết bị an toàn phù hợp cho trẻ em.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa đầy đủ thông tin chính xác và trực tiếp trả lời câu hỏi về việc trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét có được ngồi cùng hàng ghế với người lái xe ô tô không, bao gồm cả trường hợp ngoại lệ.",
+    "context_reason": "Context chứa điều khoản pháp luật quy định rõ ràng về việc trẻ em dưới 10 tuổi và chiều cao dưới 1,35 mét không được ngồi cùng hàng ghế với người lái xe ô tô, bao gồm cả trường hợp ngoại lệ.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời trích dẫn trực tiếp điều luật liên quan, trả lời thẳng vào trọng tâm câu hỏi về việc trẻ em có được ngồi cùng hàng ghế với người lái xe hay không, bao gồm cả trường hợp ngoại lệ.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin đầy đủ và chính xác về quy định, bao gồm cả trường hợp ngoại lệ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -29,46 +29,40 @@
         "covered": true
       },
       {
-        "point": "Ngoại lệ: trừ loại xe ô tô chỉ có một hàng ghế",
+        "point": "trừ loại xe ô tô chỉ có một hàng ghế",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm thông tin về nguồn luật và các quy định liên quan."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính từ câu trả lời chuẩn, đồng thời cung cấp thêm thông tin tham chiếu luật và hướng dẫn liên quan."
   },
   "Giao xe cơ giới cho người không đủ điều kiện điều khiển có vi phạm pháp luật không?": {
     "order": 2,
     "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
     "expected_answer": "Nghiêm cấm giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ.",
-    "actual_answer": "Có, giao xe cơ giới cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ là vi phạm pháp luật. Điều này được quy định tại Điều 9, Khoản 7 của Luật Trật tự, an toàn giao thông đường bộ 2024.",
+    "actual_answer": "Theo Điều 9, Khoản 7 của Luật Trật tự, an toàn giao thông đường bộ 2024, giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ là hành vi bị nghiêm cấm.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "giao xe cơ giới cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ là vi phạm pháp luật.",
-        "supported": true
-      },
-      {
-        "claim": "Điều này được quy định tại Điều 9, Khoản 7 của Luật Trật tự, an toàn giao thông đường bộ 2024.",
+        "claim": "Theo Điều 9, Khoản 7 của Luật Trật tự, an toàn giao thông đường bộ 2024, giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện theo quy định của pháp luật để điều khiển xe tham gia giao thông đường bộ là hành vi bị nghiêm cấm.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 9 mục 7, quy định rõ việc giao xe cơ giới cho người không đủ điều kiện là hành vi bị nghiêm cấm, trực tiếp trả lời câu hỏi.",
+    "context_reason": "Context chứa Điều 9 mục 7, quy định rõ ràng hành vi giao xe cơ giới cho người không đủ điều kiện là hành vi bị nghiêm cấm, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời thẳng vào trọng tâm câu hỏi, đầy đủ và không lan man.",
-    "answer_correctness": 0.7,
-    "missed_points": [
-      "xe máy chuyên dùng"
-    ],
+    "answer_reason": "Câu trả lời trực tiếp khẳng định hành vi bị nghiêm cấm, đúng trọng tâm câu hỏi.",
+    "answer_correctness": 1.0,
+    "missed_points": [],
     "key_points": [
       {
-        "point": "Nghiêm cấm giao xe cơ giới",
+        "point": "Nghiêm cấm",
         "covered": true
       },
       {
-        "point": "xe máy chuyên dùng",
-        "covered": false
+        "point": "giao xe cơ giới, xe máy chuyên dùng",
+        "covered": true
       },
       {
         "point": "cho người không đủ điều kiện theo quy định của pháp luật",
@@ -79,7 +73,7 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đúng phần lớn nội dung, nhưng thiếu chi tiết 'xe máy chuyên dùng' so với câu trả lời chuẩn."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ tất cả các điểm chính của câu trả lời chuẩn và còn bổ sung thêm điều khoản luật cụ thể, làm tăng tính chính xác và hữu ích."
   },
   "Thứ tự ưu tiên chấp hành báo hiệu đường bộ được quy định như thế nào?": {
     "order": 3,
@@ -95,34 +89,34 @@
         "supported": true
       },
       {
-        "claim": "1. Hiệu lệnh của người điều khiển giao thông;",
+        "claim": "Hiệu lệnh của người điều khiển giao thông;",
         "supported": true
       },
       {
-        "claim": "2. Tín hiệu đèn giao thông;",
+        "claim": "Tín hiệu đèn giao thông;",
         "supported": true
       },
       {
-        "claim": "3. Biển báo hiệu đường bộ;",
+        "claim": "Biển báo hiệu đường bộ;",
         "supported": true
       },
       {
-        "claim": "4. Vạch kẻ đường và các dấu hiệu khác trên mặt đường;",
+        "claim": "Vạch kẻ đường và các dấu hiệu khác trên mặt đường;",
         "supported": true
       },
       {
-        "claim": "5. Cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H;",
+        "claim": "Cọc tiêu, tường bảo vệ, rào chắn, đinh phản quang, tiêu phản quang, cột Km, cọc H;",
         "supported": true
       },
       {
-        "claim": "6. Thiết bị âm thanh báo hiệu đường bộ.",
+        "claim": "Thiết bị âm thanh báo hiệu đường bộ.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa đầy đủ và chính xác thông tin về thứ tự ưu tiên chấp hành báo hiệu đường bộ tại Điều 11, khoản 2.",
+    "context_reason": "Context chứa đầy đủ và chính xác thông tin về thứ tự ưu tiên chấp hành báo hiệu đường bộ tại Khoản 2, Điều 11. Ngoài ra, Khoản 12 còn bổ sung quy định về ưu tiên giữa biển báo cố định và tạm thời.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời nêu rõ và đầy đủ thứ tự ưu tiên chấp hành báo hiệu đường bộ theo đúng quy định pháp luật.",
+    "answer_reason": "Câu trả lời trực tiếp và đầy đủ về thứ tự ưu tiên chấp hành báo hiệu đường bộ, có trích dẫn nguồn.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -163,27 +157,27 @@
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 14. Vượt xe và nhường đường cho xe xin vượt, Khoản 2: Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái thì được vượt về bên phải.",
+        "claim": "Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái thì được vượt về bên phải.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa đầy đủ và chính xác các trường hợp người lái xe được phép vượt xe về bên phải theo quy định tại Khoản 2, Điều 14.",
+    "context_reason": "Context chứa đầy đủ thông tin chính xác về các trường hợp được phép vượt xe về bên phải theo Điều 14 khoản 2.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ, không lan man.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Được vượt về bên phải khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái",
+        "point": "Xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái",
         "covered": true
       },
       {
-        "point": "hoặc khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái",
+        "point": "Xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính được nêu trong câu trả lời chuẩn."
   },
   "Người lái xe có được phép quay đầu xe trong hầm đường bộ không?": {
     "order": 5,
@@ -243,7 +237,7 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 16.2 trực tiếp quy định 'Không được lùi xe ở đường một chiều', điều này khẳng định hành vi đó là vi phạm các quy tắc, nguyên tắc, quy phạm pháp luật về trật tự, an toàn giao thông đường bộ.",
+    "context_reason": "Điều 16 khoản 2 trực tiếp quy định 'Không được lùi xe ở đường một chiều', điều này khẳng định hành vi đó là vi phạm quy tắc giao thông đường bộ, thuộc phạm vi Luật Trật tự, an toàn giao thông. Điều 2 cung cấp định nghĩa về 'Trật tự, an toàn giao thông đường bộ' để củng cố ngữ cảnh pháp lý.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác.",
     "answer_correctness": 1.0,
@@ -264,20 +258,20 @@
     "order": 7,
     "expected_article": "Điều 17. Tránh xe đi ngược chiều",
     "expected_answer": "Xe xuống dốc phải nhường đường cho xe lên dốc.",
-    "actual_answer": "Theo Điều 17, Khoản 2, Điểm b của Luật Trật tự, an toàn giao thông đường bộ 2024, xe xuống dốc phải nhường đường cho xe lên dốc.",
+    "actual_answer": "Theo Điều 17. Tránh xe đi ngược chiều, Khoản 2, Điểm b:\n\nXe xuống dốc phải nhường đường cho xe lên dốc.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 17, Khoản 2, Điểm b của Luật Trật tự, an toàn giao thông đường bộ 2024, xe xuống dốc phải nhường đường cho xe lên dốc.",
+        "claim": "Theo Điều 17. Tránh xe đi ngược chiều, Khoản 2, Điểm b: Xe xuống dốc phải nhường đường cho xe lên dốc.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa quy định rõ ràng về việc nhường đường khi tránh nhau ở đường dốc, cụ thể là xe xuống dốc phải nhường đường cho xe lên dốc.",
+    "context_reason": "Context chứa điều khoản cụ thể quy định xe xuống dốc phải nhường đường cho xe lên dốc khi tránh nhau, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ về quy tắc nhường đường trên đường dốc.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -286,23 +280,19 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế hoàn toàn khớp với câu trả lời chuẩn và cung cấp thêm thông tin tham chiếu pháp luật chính xác."
+    "correctness_reason": "Câu trả lời thực tế hoàn toàn khớp với câu trả lời chuẩn và cung cấp thêm căn cứ pháp lý chính xác."
   },
   "Theo Luật Trật tự an toàn giao thông, dừng xe được hiểu là gì?": {
     "order": 8,
     "expected_article": "Điều 18. Dừng xe, đỗ xe",
     "expected_answer": "Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác.",
-    "actual_answer": "Theo Điều 18. Dừng xe, đỗ xe của Luật Trật tự, an toàn giao thông đường bộ 2024:\n\nKhoản 1. Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.",
+    "actual_answer": "Theo Điều 18, Khoản 1 của Luật Trật tự, an toàn giao thông đường bộ 2024, dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 18. Dừng xe, đỗ xe của Luật Trật tự, an toàn giao thông đường bộ 2024",
-        "supported": true
-      },
-      {
-        "claim": "Khoản 1. Dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác.",
+        "claim": "Theo Điều 18, Khoản 1 của Luật Trật tự, an toàn giao thông đường bộ 2024, dừng xe là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác.",
         "supported": true
       },
       {
@@ -311,9 +301,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa định nghĩa chính xác và đầy đủ về 'dừng xe' theo Điều 18 của Luật Trật tự an toàn giao thông, trực tiếp trả lời câu hỏi.",
+    "context_reason": "Context chứa định nghĩa đầy đủ và chính xác về 'dừng xe' theo Điều 18 của Luật Trật tự an toàn giao thông.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời định nghĩa dừng xe chính xác và đầy đủ theo luật được hỏi, không thừa không thiếu.",
+    "answer_reason": "Câu trả lời định nghĩa dừng xe một cách đầy đủ, chính xác theo luật, không lan man và cung cấp thêm các quy định liên quan trực tiếp.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -322,23 +312,11 @@
         "covered": true
       },
       {
-        "point": "trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe",
-        "covered": true
-      },
-      {
-        "point": "xếp dỡ hàng hóa",
-        "covered": true
-      },
-      {
-        "point": "kiểm tra kỹ thuật xe",
-        "covered": true
-      },
-      {
-        "point": "hoặc hoạt động khác",
+        "point": "trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm ngữ cảnh từ điều luật."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm thông tin liên quan từ cùng điều luật."
   },
   "Trên đường phố hẹp, xe đỗ phải cách xe đang đỗ ngược chiều tối thiểu bao nhiêu mét?": {
     "order": 9,
@@ -350,18 +328,14 @@
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 18, Khoản 4, Điểm e của Luật Trật tự, an toàn giao thông đường bộ 2024",
-        "supported": true
-      },
-      {
-        "claim": "trên đường phố hẹp, xe đỗ phải cách xe ô tô đang đỗ ngược chiều tối thiểu 20 mét.",
+        "claim": "Theo Điều 18, Khoản 4, Điểm e của Luật Trật tự, an toàn giao thông đường bộ 2024, trên đường phố hẹp, xe đỗ phải cách xe ô tô đang đỗ ngược chiều tối thiểu 20 mét.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
     "context_reason": "Context chứa chính xác quy định về khoảng cách tối thiểu khi đỗ xe ngược chiều trên đường phố hẹp.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và có dẫn chứng.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ thông tin và có trích dẫn nguồn.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -384,20 +358,20 @@
     "order": 10,
     "expected_article": "Điều 20. Sử dụng đèn",
     "expected_answer": "Trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
-    "actual_answer": "Theo Điều 20, Khoản 1 của Luật Trật tự, an toàn giao thông đường bộ 2024, người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+    "actual_answer": "Theo Điều 20. Sử dụng đèn, Khoản 1, người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 20, Khoản 1 của Luật Trật tự, an toàn giao thông đường bộ 2024, người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
+        "claim": "Theo Điều 20. Sử dụng đèn, Khoản 1, người lái xe, người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ phải bật đèn chiếu sáng phía trước trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
     "context_reason": "Context chứa đầy đủ thông tin chính xác về khoảng thời gian bắt buộc bật đèn chiếu sáng phía trước theo Điều 20, Khoản 1.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời nêu rõ khoảng thời gian cụ thể và các điều kiện khác khi bắt buộc bật đèn chiếu sáng phía trước, đúng trọng tâm và đầy đủ.",
+    "answer_reason": "Trả lời thẳng vào khoảng thời gian bắt buộc và bổ sung các điều kiện khác cũng yêu cầu bật đèn, đầy đủ và chính xác.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -410,13 +384,13 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn."
   },
   "Trong khu đông dân cư từ 22 giờ đêm đến 5 giờ sáng, có được dùng còi để xin vượt không?": {
     "order": 11,
     "expected_article": "Điều 14. Vượt xe và nhường đường cho xe xin vượt",
     "expected_answer": "Không được dùng còi. Trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư chỉ được báo hiệu xin vượt bằng đèn.",
-    "actual_answer": "Theo Điều 21. Sử dụng tín hiệu còi, Khoản 2, không sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, trừ xe ưu tiên. Do đó, không được dùng còi để xin vượt trong thời gian này.",
+    "actual_answer": "Theo Điều 21. Sử dụng tín hiệu còi, Khoản 2, không sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, trừ xe ưu tiên. Do đó, không được dùng còi để xin vượt trong thời gian và khu vực này.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
@@ -426,14 +400,14 @@
         "supported": true
       },
       {
-        "claim": "Do đó, không được dùng còi để xin vượt trong thời gian này.",
+        "claim": "Do đó, không được dùng còi để xin vượt trong thời gian và khu vực này.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
     "context_reason": "Context chứa thông tin rõ ràng và đầy đủ từ Điều 14 và Điều 21, quy định không được dùng còi để xin vượt trong khu đông dân cư từ 22h đến 5h sáng, mà chỉ được dùng đèn.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ, không lan man.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin đầy đủ và chính xác, không lan man.",
     "answer_correctness": 0.7,
     "missed_points": [
       "Chỉ được báo hiệu xin vượt bằng đèn."
@@ -456,30 +430,26 @@
         "covered": false
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đã nêu đúng và đầy đủ về việc không được dùng còi trong khu đông dân cư từ 22h đến 5h sáng, bao gồm cả việc trích dẫn điều luật. Tuy nhiên, câu trả lời thiếu chi tiết về việc chỉ được báo hiệu xin vượt bằng đèn."
+    "correctness_reason": "Câu trả lời thực tế đã nêu đúng và đầy đủ các điểm chính về việc không được dùng còi trong thời gian và khu vực quy định. Tuy nhiên, câu trả lời thiếu chi tiết về việc chỉ được báo hiệu xin vượt bằng đèn, là một điểm nhỏ trong câu trả lời chuẩn."
   },
   "Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ hướng nào?": {
     "order": 12,
     "expected_article": "Điều 22. Nhường đường tại nơi đường giao nhau",
     "expected_answer": "Phải nhường đường cho xe đi đến từ bên phải.",
-    "actual_answer": "Theo Điều 22. Nhường đường tại nơi đường giao nhau, Khoản 2: Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+    "actual_answer": "Theo Điều 22, Khoản 2 của Luật Trật tự, an toàn giao thông đường bộ 2024, tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 22. Nhường đường tại nơi đường giao nhau",
-        "supported": true
-      },
-      {
-        "claim": "Khoản 2: Tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+        "claim": "Theo Điều 22, Khoản 2 của Luật Trật tự, an toàn giao thông đường bộ 2024, tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Đoạn văn bản Điều 22, mục 2 cung cấp thông tin chính xác và đầy đủ để trả lời câu hỏi về việc nhường đường tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến.",
+    "context_reason": "Đoạn văn bản Điều 22, mục 2 cung cấp thông tin chính xác và đầy đủ để trả lời câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đúng trọng tâm câu hỏi, đầy đủ và chính xác.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -488,30 +458,46 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ thông tin chính xác từ câu trả lời chuẩn và cung cấp thêm nguồn tham chiếu pháp luật liên quan."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác nội dung của câu trả lời chuẩn, đồng thời cung cấp thêm tham chiếu pháp luật liên quan."
   },
   "Khi qua phà, xe chở khách công cộng có được ưu tiên hơn xe chở thực phẩm tươi sống không?": {
     "order": 13,
     "expected_article": "Điều 23. Qua phà, qua cầu phao",
     "expected_answer": "Không. Theo thứ tự ưu tiên, xe chở thực phẩm tươi sống được qua trước xe chở khách công cộng.",
-    "actual_answer": "Theo Điều 23. Qua phà, qua cầu phao, Khoản 2, các xe qua phà, qua cầu phao theo thứ tự ưu tiên từ trên xuống dưới như sau:\n\n- Điểm c) Xe chở thực phẩm tươi sống;\n- Điểm d) Xe chở khách công cộng.\n\nVì vậy, xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng.",
+    "actual_answer": "Theo Điều 23. Qua phà, qua cầu phao, Khoản 2, các xe qua phà, qua cầu phao theo thứ tự ưu tiên từ trên xuống dưới như sau:\n\nĐiểm a) Xe ưu tiên;\nĐiểm b) Xe chở thư báo;\nĐiểm c) Xe chở thực phẩm tươi sống;\nĐiểm d) Xe chở khách công cộng.\n\nVì vậy, xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 23. Qua phà, qua cầu phao, Khoản 2, các xe qua phà, qua cầu phao theo thứ tự ưu tiên từ trên xuống dưới như sau: Điểm c) Xe chở thực phẩm tươi sống; Điểm d) Xe chở khách công cộng.",
+        "claim": "Theo Điều 23. Qua phà, qua cầu phao, Khoản 2, các xe qua phà, qua cầu phao theo thứ tự ưu tiên từ trên xuống dưới như sau:",
         "supported": true
       },
       {
-        "claim": "Xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng.",
+        "claim": "Điểm a) Xe ưu tiên;",
+        "supported": true
+      },
+      {
+        "claim": "Điểm b) Xe chở thư báo;",
+        "supported": true
+      },
+      {
+        "claim": "Điểm c) Xe chở thực phẩm tươi sống;",
+        "supported": true
+      },
+      {
+        "claim": "Điểm d) Xe chở khách công cộng.",
+        "supported": true
+      },
+      {
+        "claim": "Vì vậy, xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context liệt kê rõ ràng thứ tự ưu tiên qua phà, cho thấy xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng, trả lời trực tiếp câu hỏi.",
+    "context_reason": "Context cung cấp rõ ràng thứ tự ưu tiên của các loại xe khi qua phà, cho phép xác định chính xác xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, cung cấp thông tin chính xác và kết luận rõ ràng dựa trên điều luật.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, cung cấp thông tin chính xác và đầy đủ về thứ tự ưu tiên theo quy định.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -520,11 +506,11 @@
         "covered": true
       },
       {
-        "point": "Xe chở thực phẩm tươi sống được qua trước xe chở khách công cộng.",
+        "point": "Thứ tự ưu tiên là xe chở thực phẩm tươi sống được qua trước xe chở khách công cộng.",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế hoàn toàn khớp với câu trả lời chuẩn, nêu rõ xe chở thực phẩm tươi sống được ưu tiên hơn xe chở khách công cộng và cung cấp thêm căn cứ pháp lý."
+    "correctness_reason": "Câu trả lời thực tế hoàn toàn đúng, cung cấp đầy đủ thông tin về thứ tự ưu tiên và thậm chí còn trích dẫn điều luật cụ thể, khớp hoàn toàn với câu trả lời chuẩn."
   },
   "Ùn tắc giao thông đường bộ được định nghĩa như thế nào?": {
     "order": 14,
@@ -574,28 +560,20 @@
     "order": 15,
     "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
     "expected_answer": "Có. Nghiêm cấm cải tạo xe ô tô loại khác thành xe ô tô chở người, trừ trường hợp phục vụ mục đích quốc phòng, an ninh.",
-    "actual_answer": "Theo Điều 9, Khoản 10 của Luật Trật tự, an toàn giao thông đường bộ 2024:\n\n\"Cải tạo xe ô tô loại khác thành xe ô tô chở người, trừ cải tạo thành xe ô tô chở người phục vụ mục đích quốc phòng, an ninh.\"\n\nVì vậy, cải tạo xe ô tô loại khác thành xe ô tô chở người bị cấm, trừ trường hợp cải tạo phục vụ mục đích quốc phòng, an ninh.",
+    "actual_answer": "Theo Điều 9, Khoản 10 của Luật Trật tự, an toàn giao thông đường bộ 2024, cải tạo xe ô tô loại khác thành xe ô tô chở người bị cấm, trừ trường hợp cải tạo thành xe ô tô chở người phục vụ mục đích quốc phòng, an ninh.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 9, Khoản 10 của Luật Trật tự, an toàn giao thông đường bộ 2024",
-        "supported": true
-      },
-      {
-        "claim": "\"Cải tạo xe ô tô loại khác thành xe ô tô chở người, trừ cải tạo thành xe ô tô chở người phục vụ mục đích quốc phòng, an ninh.\"",
-        "supported": true
-      },
-      {
-        "claim": "cải tạo xe ô tô loại khác thành xe ô tô chở người bị cấm, trừ trường hợp cải tạo phục vụ mục đích quốc phòng, an ninh.",
+        "claim": "Theo Điều 9, Khoản 10 của Luật Trật tự, an toàn giao thông đường bộ 2024, cải tạo xe ô tô loại khác thành xe ô tô chở người bị cấm, trừ trường hợp cải tạo thành xe ô tô chở người phục vụ mục đích quốc phòng, an ninh.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 9, khoản 10, trực tiếp quy định về hành vi cải tạo xe ô tô loại khác thành xe ô tô chở người, bao gồm cả trường hợp ngoại lệ, trả lời đầy đủ câu hỏi. Điều 2, khoản 7 cung cấp định nghĩa rõ ràng về 'cải tạo xe'.",
+    "context_reason": "Context chứa đầy đủ thông tin chính xác và trực tiếp trả lời câu hỏi, bao gồm cả trường hợp ngoại lệ được nêu rõ.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời thẳng vào câu hỏi, đầy đủ và chính xác theo quy định pháp luật được trích dẫn.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác thông tin.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -604,11 +582,11 @@
         "covered": true
       },
       {
-        "point": "Trừ trường hợp phục vụ mục đích quốc phòng, an ninh.",
+        "point": "Có ngoại lệ cho mục đích quốc phòng, an ninh.",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính từ câu trả lời chuẩn, bao gồm cả quy định cấm và trường hợp ngoại lệ."
+    "correctness_reason": "Câu trả lời thực tế đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, bao gồm cả nội dung cấm và ngoại lệ."
   },
   "Người tiêu dùng có nghĩa vụ gì khi phát hiện hàng hóa không bảo đảm an toàn trên thị trường?": {
     "order": 16,
@@ -625,9 +603,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 5 khoản 4, nêu rõ nghĩa vụ của người tiêu dùng là thông tin kịp thời, chính xác cho cơ quan nhà nước khi phát hiện hàng hóa không an toàn, trả lời đầy đủ câu hỏi.",
+    "context_reason": "Context chứa Điều 5, khoản 4 quy định rõ nghĩa vụ của người tiêu dùng là thông tin kịp thời cho cơ quan nhà nước, tổ chức, cá nhân liên quan khi phát hiện hàng hóa không bảo đảm an toàn, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, nêu rõ nghĩa vụ của người tiêu dùng và căn cứ pháp lý.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, nêu rõ nghĩa vụ và căn cứ pháp lý.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -661,69 +639,69 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 10.1.d của Luật Bảo vệ quyền lợi người tiêu dùng trực tiếp nghiêm cấm hành vi ép buộc người tiêu dùng thanh toán cho sản phẩm không có thỏa thuận trước, cung cấp thông tin đầy đủ và chính xác để trả lời câu hỏi.",
+    "context_reason": "Context chứa Điều 10, khoản 1, điểm d, quy định rõ ràng rằng việc ép buộc người tiêu dùng thanh toán cho sản phẩm, dịch vụ không có thỏa thuận trước là hành vi bị nghiêm cấm.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác dựa trên quy định pháp luật.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Hành vi ép buộc người tiêu dùng thanh toán cho sản phẩm không có thỏa thuận trước là không được phép.",
+        "point": "Không được phép (phủ định hành vi)",
         "covered": true
       },
       {
-        "point": "Hành vi này bị nghiêm cấm.",
+        "point": "Hành vi ép buộc người tiêu dùng thanh toán cho sản phẩm, hàng hóa, dịch vụ đã cung cấp mà không có thỏa thuận trước bị nghiêm cấm.",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ các điểm chính của câu trả lời chuẩn, khẳng định hành vi bị nghiêm cấm và mô tả chính xác hành vi đó. Ngoài ra, câu trả lời còn cung cấp điều luật cụ thể, làm tăng tính chính xác và độ tin cậy."
+    "correctness_reason": "Câu trả lời thực tế đã trả lời đúng và đầy đủ tất cả các điểm chính của câu trả lời chuẩn, thậm chí còn cung cấp thêm căn cứ pháp lý cụ thể."
   },
   "Người tiêu dùng dễ bị tổn thương bao gồm những đối tượng nào?": {
     "order": 18,
     "expected_article": "Điều 8. Bảo vệ quyền lợi người tiêu dùng dễ bị tổn thương",
     "expected_answer": "Bao gồm: Người cao tuổi, người khuyết tật, trẻ em, người dân tộc thiểu số, phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi, người bị bệnh hiểm nghèo và thành viên hộ nghèo.",
-    "actual_answer": "Theo Điều 8. Bảo vệ quyền lợi người tiêu dùng dễ bị tổn thương của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng dễ bị tổn thương bao gồm:\n\n- Người cao tuổi theo quy định của pháp luật về người cao tuổi;\n- Người khuyết tật theo quy định của pháp luật về người khuyết tật;\n- Trẻ em theo quy định của pháp luật về trẻ em;\n- Người dân tộc thiểu số; người sinh sống tại vùng đồng bào dân tộc thiểu số và miền núi, hải đảo, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật;\n- Phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi;\n- Người bị bệnh hiểm nghèo theo quy định của pháp luật;\n- Thành viên hộ nghèo theo quy định của pháp luật.",
+    "actual_answer": "Theo Điều 8, Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng dễ bị tổn thương bao gồm:\n\n- Người cao tuổi theo quy định của pháp luật về người cao tuổi;\n- Người khuyết tật theo quy định của pháp luật về người khuyết tật;\n- Trẻ em theo quy định của pháp luật về trẻ em;\n- Người dân tộc thiểu số; người sinh sống tại vùng đồng bào dân tộc thiểu số và miền núi, hải đảo, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật;\n- Phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi;\n- Người bị bệnh hiểm nghèo theo quy định của pháp luật;\n- Thành viên hộ nghèo theo quy định của pháp luật.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 8. Bảo vệ quyền lợi người tiêu dùng dễ bị tổn thương của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng dễ bị tổn thương bao gồm:",
+        "claim": "Theo Điều 8, Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng dễ bị tổn thương bao gồm:",
         "supported": true
       },
       {
-        "claim": "- Người cao tuổi theo quy định của pháp luật về người cao tuổi;",
+        "claim": "Người cao tuổi theo quy định của pháp luật về người cao tuổi;",
         "supported": true
       },
       {
-        "claim": "- Người khuyết tật theo quy định của pháp luật về người khuyết tật;",
+        "claim": "Người khuyết tật theo quy định của pháp luật về người khuyết tật;",
         "supported": true
       },
       {
-        "claim": "- Trẻ em theo quy định của pháp luật về trẻ em;",
+        "claim": "Trẻ em theo quy định của pháp luật về trẻ em;",
         "supported": true
       },
       {
-        "claim": "- Người dân tộc thiểu số; người sinh sống tại vùng đồng bào dân tộc thiểu số và miền núi, hải đảo, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật;",
+        "claim": "Người dân tộc thiểu số; người sinh sống tại vùng đồng bào dân tộc thiểu số và miền núi, hải đảo, vùng có điều kiện kinh tế - xã hội khó khăn, vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn theo quy định của pháp luật;",
         "supported": true
       },
       {
-        "claim": "- Phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi;",
+        "claim": "Phụ nữ đang mang thai hoặc nuôi con dưới 36 tháng tuổi;",
         "supported": true
       },
       {
-        "claim": "- Người bị bệnh hiểm nghèo theo quy định của pháp luật;",
+        "claim": "Người bị bệnh hiểm nghèo theo quy định của pháp luật;",
         "supported": true
       },
       {
-        "claim": "- Thành viên hộ nghèo theo quy định của pháp luật.",
+        "claim": "Thành viên hộ nghèo theo quy định của pháp luật.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context cung cấp đầy đủ và chính xác danh sách các đối tượng người tiêu dùng dễ bị tổn thương theo quy định của pháp luật, trả lời hoàn toàn câu hỏi.",
+    "context_reason": "Context cung cấp định nghĩa và liệt kê đầy đủ các đối tượng người tiêu dùng dễ bị tổn thương theo Điều 8 Khoản 1, trả lời hoàn toàn câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời liệt kê đầy đủ và chính xác các đối tượng người tiêu dùng dễ bị tổn thương theo quy định của pháp luật, đúng trọng tâm câu hỏi.",
+    "answer_reason": "Trả lời đầy đủ và chính xác các đối tượng người tiêu dùng dễ bị tổn thương theo quy định pháp luật.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -756,7 +734,7 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế liệt kê đầy đủ và chính xác tất cả các đối tượng người tiêu dùng dễ bị tổn thương như trong câu trả lời chuẩn, đồng thời cung cấp thêm ngữ cảnh pháp lý chi tiết."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các đối tượng người tiêu dùng dễ bị tổn thương như trong câu trả lời chuẩn, đồng thời cung cấp thêm ngữ cảnh pháp lý chi tiết."
   },
   "Tổ chức kinh doanh có được thu thập thông tin người tiêu dùng mà không cần thông báo trước không?": {
     "order": 19,
@@ -773,9 +751,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 17 của ngữ cảnh cung cấp đầy đủ thông tin về quy định chung (phải thông báo và được đồng ý) và các trường hợp ngoại lệ (không cần thông báo) để trả lời câu hỏi.",
+    "context_reason": "Context cung cấp đầy đủ thông tin về quy định chung (phải thông báo và được đồng ý) và các trường hợp ngoại lệ (không cần thông báo) để trả lời câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ, có viện dẫn luật và không lan man.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, cung cấp thông tin đầy đủ và chính xác theo luật định.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -834,7 +812,7 @@
     "order": 21,
     "expected_article": "Điều 35. Miễn trách nhiệm bồi thường thiệt hại do sản phẩm, hàng hóa có khuyết tật gây ra",
     "expected_answer": "Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại.",
-    "actual_answer": "Theo Điều 35 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức, cá nhân kinh doanh được miễn trách nhiệm bồi thường thiệt hại do sản phẩm, hàng hóa có khuyết tật gây ra trong các trường hợp sau:\n\nKhoản 1. Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại;\n\nKhoản 2. Tổ chức, cá nhân kinh doanh đã áp dụng đầy đủ các biện pháp quy định tại Điều 3 và Điều 3 của Luật này, người tiêu dùng đã tiếp nhận đầy đủ thông tin nhưng vẫn cố ý sử dụng sản phẩm, hàng hóa có khuyết tật gây thiệt hại;\n\nKhoản 3. Trường hợp khác theo quy định của pháp luật về dân sự và quy định khác của pháp luật có liên quan.",
+    "actual_answer": "Theo Điều 35 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức, cá nhân kinh doanh được miễn trách nhiệm bồi thường thiệt hại do sản phẩm, hàng hóa có khuyết tật gây ra trong các trường hợp sau:\n\n1. Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại.\n2. Tổ chức, cá nhân kinh doanh đã áp dụng đầy đủ các biện pháp quy định tại Điều 32 và Điều 33 của Luật này, người tiêu dùng đã tiếp nhận đầy đủ thông tin nhưng vẫn cố ý sử dụng sản phẩm, hàng hóa có khuyết tật gây thiệt hại.\n3. Trường hợp khác theo quy định của pháp luật về dân sự và quy định khác của pháp luật có liên quan.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
@@ -844,11 +822,11 @@
         "supported": true
       },
       {
-        "claim": "Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại;",
+        "claim": "Khi chứng minh được khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại.",
         "supported": true
       },
       {
-        "claim": "Tổ chức, cá nhân kinh doanh đã áp dụng đầy đủ các biện pháp quy định tại Điều 3 và Điều 3 của Luật này, người tiêu dùng đã tiếp nhận đầy đủ thông tin nhưng vẫn cố ý sử dụng sản phẩm, hàng hóa có khuyết tật gây thiệt hại;",
+        "claim": "Tổ chức, cá nhân kinh doanh đã áp dụng đầy đủ các biện pháp quy định tại Điều 32 và Điều 33 của Luật này, người tiêu dùng đã tiếp nhận đầy đủ thông tin nhưng vẫn cố ý sử dụng sản phẩm, hàng hóa có khuyết tật gây thiệt hại.",
         "supported": true
       },
       {
@@ -857,73 +835,73 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 35 của context cung cấp đầy đủ và chính xác các trường hợp tổ chức kinh doanh được miễn trách nhiệm bồi thường thiệt hại do hàng hóa có khuyết tật.",
+    "context_reason": "Điều 35 của Luật này liệt kê đầy đủ và chính xác các trường hợp tổ chức kinh doanh được miễn trách nhiệm bồi thường thiệt hại do hàng hóa có khuyết tật gây ra, trả lời hoàn toàn câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp đầy đủ các trường hợp miễn trách nhiệm bồi thường theo luật định.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, liệt kê đầy đủ các trường hợp miễn trách nhiệm theo quy định pháp luật.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại.",
+        "point": "khuyết tật của sản phẩm, hàng hóa không thể phát hiện được với trình độ khoa học, công nghệ của thế giới tính đến thời điểm sản phẩm, hàng hóa gây thiệt hại",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm các trường hợp miễn trách nhiệm khác theo quy định của pháp luật."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ điểm chính của câu trả lời chuẩn và cung cấp thêm các trường hợp miễn trách nhiệm khác theo quy định của pháp luật."
   },
   "Trong giao dịch từ xa, nếu tổ chức kinh doanh cung cấp thông tin không đầy đủ, người tiêu dùng có quyền đơn phương chấm dứt hợp đồng trong bao lâu?": {
     "order": 22,
     "expected_article": "Điều 38. Giao kết hợp đồng trong giao dịch từ xa",
     "expected_answer": "Trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng đã giao kết.",
-    "actual_answer": "Theo Điều 38, Khoản 3, Điểm b của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng nếu tổ chức kinh doanh cung cấp thông tin không đầy đủ.",
+    "actual_answer": "Theo Điều 38, Khoản 3, Điểm b của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 38, Khoản 3, Điểm b của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng nếu tổ chức kinh doanh cung cấp thông tin không đầy đủ.",
+        "claim": "Theo Điều 38, Khoản 3, Điểm b của Luật Bảo vệ quyền lợi người tiêu dùng 2023, người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng trong thời hạn 30 ngày kể từ ngày giao kết hợp đồng.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context cung cấp chính xác và đầy đủ thông tin về thời hạn 30 ngày để người tiêu dùng đơn phương chấm dứt hợp đồng trong trường hợp tổ chức kinh doanh cung cấp thông tin không đầy đủ trong giao dịch từ xa.",
+    "context_reason": "Context chứa đầy đủ thông tin về điều kiện (cung cấp thông tin không đầy đủ trong giao dịch từ xa) và thời hạn cụ thể (30 ngày) để người tiêu dùng đơn phương chấm dứt hợp đồng.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi về thời hạn chấm dứt hợp đồng và điều kiện liên quan, có trích dẫn luật.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thời hạn cụ thể và đầy đủ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Thời hạn đơn phương chấm dứt hợp đồng là 30 ngày",
+        "point": "Thời hạn 30 ngày",
         "covered": true
       },
       {
-        "point": "Thời điểm bắt đầu tính thời hạn là kể từ ngày giao kết hợp đồng",
+        "point": "Kể từ ngày giao kết hợp đồng",
         "covered": true
       },
       {
-        "point": "Người tiêu dùng có quyền đơn phương chấm dứt thực hiện hợp đồng",
+        "point": "Người tiêu dùng có quyền đơn phương chấm dứt hợp đồng",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý và ngữ cảnh liên quan."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn."
   },
   "Khi có tranh chấp liên quan đến lợi ích quốc gia, có được giải quyết thông qua thương lượng, hòa giải không?": {
     "order": 23,
     "expected_article": "Điều 54. Phương thức giải quyết tranh chấp giữa người tiêu dùng và tổ chức, cá nhân kinh doanh",
     "expected_answer": "Không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
-    "actual_answer": "Theo Điều 54, Khoản 2, Điểm a) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
+    "actual_answer": "Theo Điều 54, Khoản 2, Điểm a của Luật Bảo vệ quyền lợi người tiêu dùng 2023, không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 54, Khoản 2, Điểm a) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
+        "claim": "Theo Điều 54, Khoản 2, Điểm a của Luật Bảo vệ quyền lợi người tiêu dùng 2023, không được thương lượng, hòa giải trong trường hợp xâm phạm đến lợi ích quốc gia, dân tộc, lợi ích công cộng.",
         "supported": true
       }
     ],
-    "context_relevance": 0.7,
-    "context_reason": "Context cung cấp thông tin rằng tranh chấp giữa người tiêu dùng và tổ chức, cá nhân kinh doanh nếu xâm phạm lợi ích quốc gia thì không được giải quyết bằng thương lượng, hòa giải. Đây là một phần thông tin rất liên quan, nhưng chỉ giới hạn trong phạm vi tranh chấp người tiêu dùng, không phải tất cả các loại tranh chấp liên quan đến lợi ích quốc gia nói chung.",
+    "context_relevance": 1.0,
+    "context_reason": "Context cung cấp thông tin trực tiếp và đầy đủ rằng không được thương lượng, hòa giải trong các trường hợp xâm phạm đến lợi ích quốc gia.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ.",
+    "answer_reason": "Câu trả lời trực tiếp khẳng định không được phép và trích dẫn điều luật liên quan, đúng trọng tâm câu hỏi.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -936,24 +914,24 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn. Thông tin bổ sung về điều luật không làm sai lệch nội dung cốt lõi."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn. Ngoài ra, nó còn cung cấp thêm tham chiếu điều luật cụ thể, làm tăng tính xác thực của câu trả lời."
   },
   "Khi nội dung hợp đồng theo mẫu có sự hiểu khác nhau, việc giải thích hợp đồng sẽ nghiêng về bên nào?": {
     "order": 24,
     "expected_article": "Điều 24. Giải thích hợp đồng giao kết với người tiêu dùng, hợp đồng theo mẫu, điều kiện giao dịch chung",
     "expected_answer": "Việc giải thích được thực hiện theo hướng có lợi cho người tiêu dùng.",
-    "actual_answer": "Theo Điều 24 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, trong trường hợp hiểu khác nhau về nội dung hợp đồng giao kết với người tiêu dùng, hợp đồng theo mẫu, điều kiện giao dịch chung thì việc giải thích được thực hiện theo hướng có lợi cho người tiêu dùng.",
+    "actual_answer": "Theo Điều 24 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, khi có sự hiểu khác nhau về nội dung hợp đồng theo mẫu, việc giải thích hợp đồng được thực hiện theo hướng có lợi cho người tiêu dùng.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 24 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, trong trường hợp hiểu khác nhau về nội dung hợp đồng giao kết với người tiêu dùng, hợp đồng theo mẫu, điều kiện giao dịch chung thì việc giải thích được thực hiện theo hướng có lợi cho người tiêu dùng.",
+        "claim": "Theo Điều 24 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, khi có sự hiểu khác nhau về nội dung hợp đồng theo mẫu, việc giải thích hợp đồng được thực hiện theo hướng có lợi cho người tiêu dùng.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 24 trực tiếp và đầy đủ trả lời câu hỏi, nêu rõ việc giải thích hợp đồng theo mẫu khi có sự hiểu khác nhau sẽ nghiêng về phía người tiêu dùng.",
+    "context_reason": "Context chứa Điều 24 quy định rõ ràng rằng khi có sự hiểu khác nhau về nội dung hợp đồng theo mẫu, việc giải thích sẽ nghiêng về phía có lợi cho người tiêu dùng. Điều này trả lời đầy đủ và chính xác câu hỏi.",
     "answer_relevance": 1.0,
     "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, nêu rõ bên được ưu tiên và căn cứ pháp lý.",
     "answer_correctness": 1.0,
@@ -964,79 +942,75 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đã bao gồm đầy đủ và chính xác điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý cụ thể."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ điểm chính của câu trả lời chuẩn và cung cấp thêm thông tin tham chiếu pháp luật chính xác."
   },
   "Khi tổ chức kinh doanh thay thế linh kiện, thời hạn bảo hành của linh kiện đó tính như thế nào?": {
     "order": 25,
     "expected_article": "Điều 30. Bảo hành sản phẩm, hàng hóa, linh kiện, phụ kiện",
     "expected_answer": "Thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.",
-    "actual_answer": "Theo Điều 30. Bảo hành sản phẩm, hàng hóa, linh kiện, phụ kiện, Khoản 2, Điểm c:\n\nTrường hợp tổ chức, cá nhân kinh doanh thay thế linh kiện, phụ kiện thì thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.",
+    "actual_answer": "Theo Điều 30, Khoản 2, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023:\n\n\"Trường hợp tổ chức, cá nhân kinh doanh thay thế linh kiện, phụ kiện thì thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.\"",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 30. Bảo hành sản phẩm, hàng hóa, linh kiện, phụ kiện, Khoản 2, Điểm c",
-        "supported": true
-      },
-      {
-        "claim": "Trường hợp tổ chức, cá nhân kinh doanh thay thế linh kiện, phụ kiện thì thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.",
+        "claim": "Theo Điều 30, Khoản 2, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023: \"Trường hợp tổ chức, cá nhân kinh doanh thay thế linh kiện, phụ kiện thì thời hạn bảo hành linh kiện, phụ kiện đó được tính lại từ thời điểm thay thế linh kiện, phụ kiện.\"",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa chính xác và đầy đủ thông tin về cách tính thời hạn bảo hành của linh kiện được thay thế, trả lời trực tiếp câu hỏi.",
+    "context_reason": "Context chứa Điều 30, khoản 2c quy định rõ ràng về cách tính thời hạn bảo hành khi thay thế linh kiện, phụ kiện.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin đầy đủ và chính xác về cách tính thời hạn bảo hành khi thay thế linh kiện.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác theo quy định pháp luật.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Thời hạn bảo hành linh kiện, phụ kiện được tính lại",
+        "point": "Thời hạn bảo hành linh kiện, phụ kiện",
         "covered": true
       },
       {
-        "point": "Tính từ thời điểm thay thế linh kiện, phụ kiện",
+        "point": "Được tính lại",
+        "covered": true
+      },
+      {
+        "point": "Từ thời điểm thay thế linh kiện, phụ kiện",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm nguồn luật."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý."
   },
   "Tổ chức bán hàng đa cấp có bắt buộc phải xuất hóa đơn khi giao dịch không?": {
     "order": 26,
     "expected_article": "Điều 45. Trách nhiệm của tổ chức, cá nhân bán hàng đa cấp",
     "expected_answer": "Có. Tổ chức bán hàng đa cấp có trách nhiệm xuất hóa đơn theo từng giao dịch bán hàng.",
-    "actual_answer": "Theo Điều 45, Khoản 1, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức bán hàng đa cấp có trách nhiệm xuất hóa đơn theo từng giao dịch bán hàng.",
+    "actual_answer": "Theo Điều 45, Khoản 1, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức bán hàng đa cấp có trách nhiệm \"Xuất hóa đơn theo từng giao dịch bán hàng.\"",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 45, Khoản 1, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức bán hàng đa cấp có trách nhiệm xuất hóa đơn theo từng giao dịch bán hàng.",
+        "claim": "Theo Điều 45, Khoản 1, Điểm c của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức bán hàng đa cấp có trách nhiệm \"Xuất hóa đơn theo từng giao dịch bán hàng.\"",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa thông tin trực tiếp và đầy đủ tại Điều 45.1.c, quy định rõ ràng rằng tổ chức bán hàng đa cấp có trách nhiệm xuất hóa đơn theo từng giao dịch bán hàng.",
+    "context_reason": "Điều 45 mục 1c quy định rõ ràng 'Tổ chức bán hàng đa cấp có trách nhiệm... Xuất hóa đơn theo từng giao dịch bán hàng', trả lời trực tiếp và đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và có căn cứ pháp lý.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Tổ chức bán hàng đa cấp có bắt buộc phải xuất hóa đơn",
+        "point": "Tổ chức bán hàng đa cấp có bắt buộc phải xuất hóa đơn.",
         "covered": true
       },
       {
-        "point": "Có trách nhiệm xuất hóa đơn",
-        "covered": true
-      },
-      {
-        "point": "Theo từng giao dịch bán hàng",
+        "point": "Xuất hóa đơn theo từng giao dịch bán hàng.",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ tất cả các điểm chính của câu trả lời chuẩn và cung cấp thêm căn cứ pháp lý cụ thể."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ các điểm chính của câu trả lời chuẩn và cung cấp thêm căn cứ pháp lý cụ thể."
   },
   "Cá nhân hoạt động thương mại độc lập, không đăng ký kinh doanh có trách nhiệm đổi trả hàng hóa không?": {
     "order": 27,
@@ -1053,9 +1027,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 9.1.d của ngữ cảnh trực tiếp quy định trách nhiệm đổi trả hàng hóa của cá nhân hoạt động thương mại độc lập, không đăng ký kinh doanh khi hàng hóa không đảm bảo chất lượng như thông tin cung cấp.",
+    "context_reason": "Điều 9 khoản 1 điểm d) của ngữ cảnh trực tiếp quy định trách nhiệm đổi trả hàng hóa của cá nhân hoạt động thương mại độc lập, không đăng ký kinh doanh, cung cấp đầy đủ thông tin để trả lời câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin đầy đủ và chính xác về trách nhiệm đổi trả hàng hóa của cá nhân hoạt động thương mại độc lập không đăng ký kinh doanh.",
+    "answer_reason": "Trả lời trực tiếp, đầy đủ về trách nhiệm đổi trả hàng hóa của cá nhân hoạt động thương mại độc lập, có căn cứ pháp lý.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1078,20 +1052,24 @@
     "order": 28,
     "expected_article": "Điều 13. Ngày Quyền của người tiêu dùng Việt Nam",
     "expected_answer": "Ngày 15 tháng 3 hằng năm là Ngày Quyền của người tiêu dùng Việt Nam.",
-    "actual_answer": "Ngày 15 tháng 3 hằng năm là Ngày Quyền của người tiêu dùng Việt Nam.",
+    "actual_answer": "Ngày Quyền của người tiêu dùng Việt Nam là ngày 15 tháng 3 hằng năm, theo Điều 13 Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Ngày 15 tháng 3 hằng năm là Ngày Quyền của người tiêu dùng Việt Nam.",
+        "claim": "Ngày Quyền của người tiêu dùng Việt Nam là ngày 15 tháng 3 hằng năm",
+        "supported": true
+      },
+      {
+        "claim": "theo Điều 13 Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
     "context_reason": "Context chứa thông tin chính xác và đầy đủ về ngày Quyền của người tiêu dùng Việt Nam.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời cung cấp chính xác và đầy đủ thông tin được hỏi, không thừa hay thiếu.",
+    "answer_reason": "Câu trả lời cung cấp chính xác ngày và thông tin bổ sung liên quan, không lan man.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1104,45 +1082,39 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời chuẩn, cung cấp đầy đủ và chính xác thông tin."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm thông tin tham chiếu pháp lý hữu ích."
   },
   "Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục nào?": {
     "order": 29,
     "expected_article": "Điều 70. Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng",
     "expected_answer": "Được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự.",
-    "actual_answer": "Theo Điều 70, Khoản 2 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 3 của Bộ luật Tố tụng Dân sự.",
+    "actual_answer": "Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 70, Khoản 2 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 3 của Bộ luật Tố tụng Dân sự.",
+        "claim": "Vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng thì được giải quyết theo thủ tục rút gọn mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context cung cấp đầy đủ và chính xác thông tin về thủ tục giải quyết vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng.",
+    "context_reason": "Context chứa thông tin trực tiếp và đầy đủ để trả lời câu hỏi về thủ tục giải quyết vụ án dân sự về bảo vệ quyền lợi người tiêu dùng có giá trị giao dịch dưới 100 triệu đồng.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác về thủ tục giải quyết.",
-    "answer_correctness": 0.4,
-    "missed_points": [
-      "quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự"
-    ],
+    "answer_reason": "Trả lời thẳng vào câu hỏi, nêu rõ thủ tục giải quyết và bổ sung thông tin quan trọng liên quan đến điều kiện áp dụng.",
+    "answer_correctness": 1.0,
+    "missed_points": [],
     "key_points": [
       {
         "point": "Được giải quyết theo thủ tục rút gọn",
         "covered": true
       },
       {
-        "point": "mà không phải đáp ứng các điều kiện",
+        "point": "mà không phải đáp ứng các điều kiện quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự",
         "covered": true
-      },
-      {
-        "point": "quy định tại khoản 1 Điều 317 của Bộ luật Tố tụng Dân sự",
-        "covered": false
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đúng về việc giải quyết theo thủ tục rút gọn và không phải đáp ứng các điều kiện, nhưng sai nghiêm trọng khi trích dẫn 'khoản 1 Điều 3' thay vì 'khoản 1 Điều 317' của Bộ luật Tố tụng Dân sự."
+    "correctness_reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời chuẩn, bao gồm tất cả các điểm chính."
   },
   "Tổ chức, cá nhân kinh doanh có được phép loại trừ quyền khởi kiện của người tiêu dùng trong hợp đồng mẫu không?": {
     "order": 30,
@@ -1159,7 +1131,7 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 25 mục 2 quy định rõ ràng tổ chức, cá nhân kinh doanh không được phép hạn chế, loại trừ quyền khởi kiện của người tiêu dùng trong hợp đồng mẫu.",
+    "context_reason": "Context chứa Điều 25 và Điều 10 quy định rõ ràng tổ chức, cá nhân kinh doanh không được phép hạn chế, loại trừ quyền khởi kiện của người tiêu dùng trong hợp đồng mẫu. Điều 67 cũng bổ sung rằng người tiêu dùng có quyền lựa chọn phương thức giải quyết tranh chấp khác ngay cả khi có điều khoản trọng tài.",
     "answer_relevance": 1.0,
     "answer_reason": "Câu trả lời đi thẳng vào vấn đề, đầy đủ và chính xác, trích dẫn điều luật cụ thể.",
     "answer_correctness": 1.0,
@@ -1193,7 +1165,7 @@
     "context_relevance": 1.0,
     "context_reason": "Context định nghĩa rõ ràng về 'Thiết bị thông minh hỗ trợ chỉ huy, điều khiển giao thông đường bộ' và mục đích sử dụng của chúng bởi lực lượng chức năng (bao gồm cảnh sát) để phát hiện, phân tích, đánh giá tình huống giao thông, vi phạm pháp luật, hỗ trợ chỉ huy, điều khiển giao thông và xử lý vi phạm.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, giải thích rõ ràng mục đích sử dụng của các thiết bị.",
+    "answer_reason": "Câu trả lời giải thích rõ ràng và đầy đủ mục đích sử dụng của các thiết bị theo đúng trọng tâm câu hỏi.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1220,20 +1192,20 @@
     "order": 32,
     "expected_article": "Điều 3. Nguyên tắc bảo đảm trật tự, an toàn giao thông đường bộ",
     "expected_answer": "Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.",
-    "actual_answer": "Theo Điều 3, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024:\n\n\"Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.\"",
+    "actual_answer": "Theo Điều 3, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024, mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 3, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024: \"Mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.\"",
+        "claim": "Theo Điều 3, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024, mọi hành vi vi phạm pháp luật về trật tự, an toàn giao thông đường bộ phải được phát hiện, ngăn chặn kịp thời và phải bị xử lý nghiêm minh theo quy định của pháp luật.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa thông tin đầy đủ và chính xác tại Điều 3, khoản 5, khẳng định mọi hành vi vi phạm đều phải bị xử lý nghiêm minh theo quy định của pháp luật.",
+    "context_reason": "Context chứa thông tin đầy đủ và chính xác tại Điều 3, khoản 5, khẳng định mọi hành vi vi phạm đều phải được xử lý nghiêm minh theo quy định của pháp luật, trực tiếp trả lời câu hỏi về tính bắt buộc của việc xử phạt.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời trích dẫn điều luật khẳng định mọi hành vi vi phạm đều phải được xử lý nghiêm minh, trả lời thẳng vào trọng tâm câu hỏi.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, trích dẫn điều luật cụ thể khẳng định mọi vi phạm đều phải bị xử lý.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1250,7 +1222,7 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời chuẩn và cung cấp thêm nguồn luật cụ thể, tăng tính chính xác và đáng tin cậy."
+    "correctness_reason": "Câu trả lời thực tế hoàn toàn khớp với câu trả lời chuẩn và cung cấp thêm nguồn tham chiếu cụ thể (Điều 3, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024), làm tăng tính chính xác và độ tin cậy."
   },
   "Hôm trước tôi giúp công an bắt người vi phạm giao thông mà bị thương, vậy có được nhà nước hỗ trợ chi phí hay đền bù gì không?": {
     "order": 33,
@@ -1262,18 +1234,22 @@
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Cơ quan, tổ chức, cá nhân tham gia phối hợp, cộng tác, hỗ trợ, giúp đỡ cơ quan nhà nước thực hiện nhiệm vụ bảo đảm trật tự, an toàn giao thông đường bộ, có thành tích thì được khen thưởng, bị thiệt hại về tài sản thì được đền bù; người bị tổn hại về danh dự, nhân phẩm thì được khôi phục; người bị thương, bị tổn hại về sức khỏe, tính mạng thì bản thân, gia đình được hưởng chế độ, chính sách theo quy định của pháp luật.",
+        "claim": "Theo Điều 4, Khoản 5 của Luật Trật tự, an toàn giao thông đường bộ 2024",
         "supported": true
       },
       {
-        "claim": "Bạn sẽ được nhà nước hỗ trợ chi phí hoặc đền bù nếu bị thương trong quá trình giúp công an bắt người vi phạm giao thông.",
+        "claim": "\"Cơ quan, tổ chức, cá nhân tham gia phối hợp, cộng tác, hỗ trợ, giúp đỡ cơ quan nhà nước thực hiện nhiệm vụ bảo đảm trật tự, an toàn giao thông đường bộ, có thành tích thì được khen thưởng, bị thiệt hại về tài sản thì được đền bù; người bị tổn hại về danh dự, nhân phẩm thì được khôi phục; người bị thương, bị tổn hại về sức khỏe, tính mạng thì bản thân, gia đình được hưởng chế độ, chính sách theo quy định của pháp luật.\"",
+        "supported": true
+      },
+      {
+        "claim": "bạn sẽ được nhà nước hỗ trợ chi phí hoặc đền bù nếu bị thương trong quá trình giúp công an bắt người vi phạm giao thông.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa thông tin đầy đủ và chính xác tại Điều 4 khoản 5, quy định rõ về việc người bị thương khi giúp đỡ cơ quan nhà nước bảo đảm trật tự, an toàn giao thông đường bộ sẽ được hưởng chế độ, chính sách theo quy định của pháp luật.",
+    "context_reason": "Điều 4, khoản 5 của ngữ cảnh cung cấp thông tin trực tiếp và đầy đủ về việc cá nhân bị thương khi hỗ trợ cơ quan nhà nước bảo đảm trật tự, an toàn giao thông đường bộ sẽ được hưởng chế độ, chính sách theo quy định của pháp luật.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào vấn đề, trích dẫn điều luật cụ thể và kết luận rõ ràng, đầy đủ.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ thông tin và có căn cứ pháp luật rõ ràng.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1303,9 +1279,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 5 khoản 3, quy định rõ trách nhiệm của cơ quan thông tin, truyền thông (bao gồm báo chí và đài truyền hình) trong việc tuyên truyền luật giao thông, trả lời đầy đủ câu hỏi.",
+    "context_reason": "Context chứa thông tin trực tiếp và đầy đủ về trách nhiệm của cơ quan thông tin, truyền thông (bao gồm báo chí và đài truyền hình) trong việc tuyên truyền luật giao thông.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời trích dẫn điều luật trực tiếp quy định trách nhiệm của cơ quan thông tin, truyền thông (bao gồm báo chí và đài truyền hình) trong việc tuyên truyền luật giao thông, đúng trọng tâm câu hỏi.",
+    "answer_reason": "Câu trả lời trích dẫn điều luật liên quan trực tiếp đến trách nhiệm của cơ quan thông tin, truyền thông (bao gồm báo chí và đài truyền hình) trong việc tuyên truyền luật giao thông, đúng trọng tâm và đầy đủ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1318,7 +1294,7 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, thậm chí còn cung cấp thêm điều luật cụ thể."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, thậm chí còn cung cấp thêm căn cứ pháp lý."
   },
   "Thông tin vi phạm giao thông của tôi có bị liên thông với cơ sở dữ liệu dân cư quốc gia không?": {
     "order": 35,
@@ -1341,7 +1317,7 @@
     "context_relevance": 1.0,
     "context_reason": "Context chứa thông tin rõ ràng và đầy đủ rằng cơ sở dữ liệu về xử lý vi phạm hành chính giao thông đường bộ là một phần của cơ sở dữ liệu về trật tự, an toàn giao thông đường bộ, và cơ sở dữ liệu này được kết nối, chia sẻ với Cơ sở dữ liệu quốc gia về dân cư.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và có căn cứ pháp lý.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ thông tin và có căn cứ pháp lý rõ ràng.",
     "answer_correctness": 0.7,
     "missed_points": [
       "Kết nối, chia sẻ với Cơ sở dữ liệu đường bộ",
@@ -1392,7 +1368,7 @@
     "context_relevance": 1.0,
     "context_reason": "Context chứa điều khoản pháp luật trực tiếp quy định hành vi 'cổ vũ đua xe trái phép' là bị nghiêm cấm, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác, có viện dẫn điều luật cụ thể.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ về việc vi phạm pháp luật.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1426,7 +1402,7 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 9 khoản 11 quy định rõ 'cố ý can thiệp làm sai lệch chỉ số trên đồng hồ báo quãng đường đã chạy của xe ô tô' là hành vi bị nghiêm cấm, trả lời trực tiếp và đầy đủ cho câu hỏi.",
+    "context_reason": "Điều 9, khoản 11 trực tiếp nêu rõ hành vi cố ý can thiệp làm sai lệch chỉ số trên đồng hồ báo quãng đường đã chạy của xe ô tô là hành vi bị nghiêm cấm, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ, không lan man.",
     "answer_correctness": 1.0,
@@ -1447,7 +1423,7 @@
     "order": 38,
     "expected_article": "Điều 9. Các hành vi bị nghiêm cấm",
     "expected_answer": "Có. Pháp luật nghiêm cấm bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe.",
-    "actual_answer": "Theo Điều 9, Khoản 17 của Luật Trật tự, an toàn giao thông đường bộ 2024, hành vi \"bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe\" bị nghiêm cấm. Do đó, dán băng dính che bớt một con số trên biển số xe máy để tránh phạt nguội là hành vi bị cấm.",
+    "actual_answer": "Theo Điều 9, Khoản 17 của Luật Trật tự, an toàn giao thông đường bộ 2024, hành vi \"bẻ cong, che lấp biển số xe; làm thay đổi chữ, số, màu sắc, hình dạng, kích thước của biển số xe\" bị nghiêm cấm. Vì vậy, dán băng dính che bớt một con số trên biển số xe máy để tránh phạt nguội là hành vi bị cấm.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
@@ -1457,14 +1433,14 @@
         "supported": true
       },
       {
-        "claim": "Do đó, dán băng dính che bớt một con số trên biển số xe máy để tránh phạt nguội là hành vi bị cấm.",
+        "claim": "Vì vậy, dán băng dính che bớt một con số trên biển số xe máy để tránh phạt nguội là hành vi bị cấm.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa điều khoản cấm hành vi che lấp biển số xe hoặc làm thay đổi chữ, số trên biển số xe, trực tiếp trả lời câu hỏi.",
+    "context_reason": "Context chứa điều khoản cấm rõ ràng về hành vi che lấp hoặc làm thay đổi chữ, số trên biển số xe, trực tiếp trả lời câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ về việc hành vi đó bị cấm theo luật.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác, có viện dẫn điều luật cụ thể.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1481,9 +1457,9 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đã bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý cụ thể."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính từ câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý cụ thể."
   },
-  "Ngồi ở hàng ghế sau của xe ô tô có bắt buộc phải thắt dây an toàn không?": {
+    "Ngồi ở hàng ghế sau của xe ô tô có bắt buộc phải thắt dây an toàn không?": {
     "order": 39,
     "expected_article": "Điều 10. Quy tắc chung",
     "expected_answer": "Người lái xe và người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn khi tham gia giao thông đường bộ.",
@@ -1498,9 +1474,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 10 khoản 2 quy định rõ người được chở trên xe ô tô phải thắt dây an toàn tại những chỗ có trang bị dây an toàn. Điều này bao gồm cả hàng ghế sau nếu ghế đó có trang bị dây an toàn.",
+    "context_reason": "Điều 10 khoản 2 quy định rõ người được chở trên xe ô tô phải thắt dây đai an toàn tại những chỗ có trang bị dây đai an toàn, bao gồm cả hàng ghế sau nếu có trang bị.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời trực tiếp và đầy đủ, bao gồm cả điều kiện 'tại những chỗ có trang bị dây đai an toàn' rất quan trọng để làm rõ.",
+    "answer_reason": "Câu trả lời trực tiếp, đầy đủ và chính xác theo quy định pháp luật, bao gồm cả người ngồi hàng ghế sau.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1521,39 +1497,39 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ tất cả các điểm chính của câu trả lời chuẩn và cung cấp thêm tham chiếu pháp luật chính xác."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, đồng thời cung cấp thêm tham chiếu điều luật cụ thể."
   },
   "Thấy đèn giao thông chuyển sang màu đỏ thì phải làm sao?": {
     "order": 40,
     "expected_article": "Điều 11. Chấp hành báo hiệu đường bộ",
     "expected_answer": "Tín hiệu đèn màu đỏ là cấm đi.",
-    "actual_answer": "Theo Điều 11, Khoản 4, Điểm c của Luật Trật tự, an toàn giao thông đường bộ 2024, tín hiệu đèn màu đỏ là cấm đi. Bạn phải dừng lại.",
+    "actual_answer": "Theo Điều 11, Khoản 4, Điểm c của Luật Trật tự, an toàn giao thông đường bộ 2024, khi thấy đèn giao thông chuyển sang màu đỏ thì phải dừng lại.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 11, Khoản 4, Điểm c của Luật Trật tự, an toàn giao thông đường bộ 2024, tín hiệu đèn màu đỏ là cấm đi.",
-        "supported": true
-      },
-      {
-        "claim": "Bạn phải dừng lại.",
+        "claim": "Theo Điều 11, Khoản 4, Điểm c của Luật Trật tự, an toàn giao thông đường bộ 2024, khi thấy đèn giao thông chuyển sang màu đỏ thì phải dừng lại.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa thông tin trực tiếp và đầy đủ về hành động cần làm khi đèn giao thông chuyển sang màu đỏ.",
+    "context_reason": "Context chứa thông tin trực tiếp và đầy đủ về việc phải làm khi đèn giao thông chuyển sang màu đỏ.",
     "answer_relevance": 1.0,
-    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác.",
+    "answer_reason": "Câu trả lời trực tiếp và đầy đủ, cung cấp thông tin chính xác và có căn cứ pháp lý.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Tín hiệu đèn màu đỏ là cấm đi.",
+        "point": "Tín hiệu đèn màu đỏ",
+        "covered": true
+      },
+      {
+        "point": "là cấm đi",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ điểm chính của câu trả lời chuẩn và cung cấp thêm thông tin tham chiếu luật pháp cùng hướng dẫn hành động cụ thể, làm cho câu trả lời chi tiết và hữu ích hơn."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ các điểm chính của câu trả lời chuẩn và cung cấp thêm thông tin tham chiếu pháp luật chính xác."
   },
   "Vạch kẻ màu trắng trên mặt đường dùng để làm gì vậy?": {
     "order": 41,
@@ -1606,14 +1582,14 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Điều 29.1 của ngữ cảnh quy định rõ ràng tổ chức, cá nhân kinh doanh có trách nhiệm cung cấp hóa đơn, chứng từ cho người tiêu dùng, trả lời trực tiếp và đầy đủ câu hỏi.",
+    "context_reason": "Context chứa Điều 29 và Điều 47 quy định rõ ràng nghĩa vụ của tổ chức, cá nhân kinh doanh phải cung cấp hóa đơn, chứng từ mua bán cho người tiêu dùng, bao gồm cả trường hợp giao dịch thông thường và giao dịch không tại địa điểm thường xuyên.",
     "answer_relevance": 1.0,
     "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp thông tin chính xác và đầy đủ về nghĩa vụ cung cấp hóa đơn/chứng từ.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Có nghĩa vụ phải đưa hóa đơn hoặc chứng từ mua bán",
+        "point": "Xác nhận có nghĩa vụ (Có)",
         "covered": true
       },
       {
@@ -1621,71 +1597,55 @@
         "covered": true
       },
       {
-        "point": "Theo quy định",
-        "covered": true
-      },
-      {
-        "point": "Hoặc theo yêu cầu của người tiêu dùng",
+        "point": "theo quy định hoặc theo yêu cầu của người tiêu dùng",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ tất cả các điểm chính của câu trả lời chuẩn và cung cấp thêm thông tin về điều luật liên quan."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm tham chiếu điều luật cụ thể."
   },
   "Xe đằng sau bấm còi xin vượt, đường phía trước thì đang thoáng, mình phải làm gì?": {
     "order": 43,
     "expected_article": "Điều 14. Vượt xe và nhường đường cho xe xin vượt",
     "expected_answer": "Phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua.",
-    "actual_answer": "Theo Điều 14, Khoản 4 của Luật Trật tự, an toàn giao thông đường bộ 2024:\n\nKhi có xe xin vượt, người điều khiển phương tiện tham gia giao thông đường bộ phía trước phải quan sát phần đường phía trước, nếu đủ điều kiện an toàn thì phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.",
+    "actual_answer": "Theo Điều 14. Vượt xe và nhường đường cho xe xin vượt, Khoản 4:\n\nKhi có xe xin vượt, người điều khiển phương tiện tham gia giao thông đường bộ phía trước phải quan sát phần đường phía trước, nếu đủ điều kiện an toàn thì phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt. Trường hợp có chướng ngại vật hoặc không đủ điều kiện an toàn thì người điều khiển phương tiện tham gia giao thông đường bộ phía trước có tín hiệu rẽ trái để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết là chưa được vượt.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 14, Khoản 4 của Luật Trật tự, an toàn giao thông đường bộ 2024",
-        "supported": true
-      },
-      {
-        "claim": "Khi có xe xin vượt, người điều khiển phương tiện tham gia giao thông đường bộ phía trước phải quan sát phần đường phía trước",
-        "supported": true
-      },
-      {
-        "claim": "nếu đủ điều kiện an toàn thì phải giảm tốc độ",
-        "supported": true
-      },
-      {
-        "claim": "có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt",
-        "supported": true
-      },
-      {
-        "claim": "và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua",
-        "supported": true
-      },
-      {
-        "claim": "không được cản trở đối với xe xin vượt.",
+        "claim": "Theo Điều 14. Vượt xe và nhường đường cho xe xin vượt, Khoản 4: Khi có xe xin vượt, người điều khiển phương tiện tham gia giao thông đường bộ phía trước phải quan sát phần đường phía trước, nếu đủ điều kiện an toàn thì phải giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt. Trường hợp có chướng ngại vật hoặc không đủ điều kiện an toàn thì người điều khiển phương tiện tham gia giao thông đường bộ phía trước có tín hiệu rẽ trái để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết là chưa được vượt.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa đầy đủ và chính xác thông tin từ Điều 14, Khoản 4 về việc nhường đường cho xe xin vượt khi đường phía trước an toàn, bao gồm các hành động cụ thể cần thực hiện.",
+    "context_reason": "Context chứa Điều 14 khoản 4 quy định rõ ràng về hành động của xe phía trước khi có xe xin vượt và đường phía trước an toàn, bao gồm quan sát, giảm tốc độ, bật tín hiệu rẽ phải, và đi sát về bên phải. Điều 12 khoản 3h cũng bổ sung về việc giảm tốc độ khi cho xe sau vượt.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp đầy đủ thông tin cần thiết và chính xác theo quy định pháp luật.",
+    "answer_reason": "Trả lời đúng trọng tâm câu hỏi, cung cấp đầy đủ thông tin cần thiết theo quy định pháp luật về việc nhường đường khi có xe xin vượt và đường phía trước thông thoáng.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Phải giảm tốc độ",
+        "point": "Giảm tốc độ",
         "covered": true
       },
       {
-        "point": "có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt",
+        "point": "Có tín hiệu rẽ phải",
         "covered": true
       },
       {
-        "point": "đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua",
+        "point": "Để báo hiệu cho người điều khiển phương tiện phía sau biết được vượt",
+        "covered": true
+      },
+      {
+        "point": "Đi sát về bên phải của phần đường xe chạy",
+        "covered": true
+      },
+      {
+        "point": "Cho đến khi xe sau đã vượt qua",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm tất cả các điểm chính của câu trả lời chuẩn và cung cấp thêm thông tin về điều luật cụ thể cũng như các chi tiết bổ sung liên quan (quan sát, không cản trở), làm cho câu trả lời đầy đủ và chính xác hơn."
+    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác tất cả các điểm chính được nêu trong câu trả lời chuẩn, đồng thời cung cấp thêm ngữ cảnh pháp luật liên quan."
   },
   "Đến ngã tư không có vòng xuyến thì ai phải nhường đường cho ai?": {
     "order": 44,
@@ -1697,12 +1657,16 @@
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 22, Khoản 2 của Luật Trật tự, an toàn giao thông đường bộ 2024, tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
+        "claim": "Theo Điều 22, Khoản 2 của Luật Trật tự, an toàn giao thông đường bộ 2024",
+        "supported": true
+      },
+      {
+        "claim": "tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến, phải nhường đường cho xe đi đến từ bên phải.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 22, mục 2, quy định rõ ràng về việc nhường đường tại nơi đường giao nhau không có vòng xuyến, trả lời trực tiếp và đầy đủ câu hỏi.",
+    "context_reason": "Context chứa Điều 22 khoản 2 quy định rõ ràng về việc nhường đường tại nơi đường giao nhau không có vòng xuyến, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và chính xác quy tắc nhường đường tại ngã tư không có vòng xuyến.",
     "answer_correctness": 1.0,
@@ -1733,12 +1697,12 @@
         "supported": true
       },
       {
-        "claim": "Bán hàng đa cấp là hoạt động bán hàng hóa thông qua mạng lưới cá nhân tham gia gồm nhiều cấp, nhiều nhánh, trong đó cá nhân tham gia được hưởng hoa hồng, tiền thưởng và lợi ích kinh tế khác từ kết quả bán hàng hóa của mình và của cá nhân khác trong mạng lưới.",
+        "claim": "\"Bán hàng đa cấp là hoạt động bán hàng hóa thông qua mạng lưới cá nhân tham gia gồm nhiều cấp, nhiều nhánh, trong đó cá nhân tham gia được hưởng hoa hồng, tiền thưởng và lợi ích kinh tế khác từ kết quả bán hàng hóa của mình và của cá nhân khác trong mạng lưới.\"",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa định nghĩa pháp luật đầy đủ và chính xác về bán hàng đa cấp tại Điều 3.",
+    "context_reason": "Context chứa định nghĩa đầy đủ và chính xác về bán hàng đa cấp theo pháp luật tại Điều 3, khoản 7b.",
     "answer_relevance": 1.0,
     "answer_reason": "Câu trả lời cung cấp định nghĩa chính xác từ văn bản pháp luật được yêu cầu, không thừa không thiếu.",
     "answer_correctness": 1.0,
@@ -1749,27 +1713,27 @@
         "covered": true
       },
       {
-        "point": "thông qua mạng lưới cá nhân tham gia",
+        "point": "Thông qua mạng lưới cá nhân tham gia",
         "covered": true
       },
       {
-        "point": "gồm nhiều cấp, nhiều nhánh",
+        "point": "Gồm nhiều cấp, nhiều nhánh",
         "covered": true
       },
       {
-        "point": "trong đó cá nhân tham gia được hưởng hoa hồng, tiền thưởng và lợi ích kinh tế khác",
+        "point": "Cá nhân tham gia được hưởng hoa hồng, tiền thưởng và lợi ích kinh tế khác",
         "covered": true
       },
       {
-        "point": "từ kết quả bán hàng hóa của mình",
+        "point": "Từ kết quả bán hàng hóa của mình",
         "covered": true
       },
       {
-        "point": "và của cá nhân khác trong mạng lưới",
+        "point": "Và của cá nhân khác trong mạng lưới",
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế hoàn toàn trùng khớp với câu trả lời chuẩn về nội dung định nghĩa bán hàng đa cấp."
+    "correctness_reason": "Câu trả lời thực tế trích dẫn chính xác và đầy đủ định nghĩa về bán hàng đa cấp như trong câu trả lời chuẩn, bao gồm tất cả các điểm chính. Nó còn bổ sung nguồn luật cụ thể."
   },
   "Quảng cáo ghi một đằng nhưng cung cấp dịch vụ một nẻo thì khách hàng có được bồi thường không?": {
     "order": 46,
@@ -1781,10 +1745,6 @@
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 36 của Luật Bảo vệ quyền lợi người tiêu dùng 2023:",
-        "supported": true
-      },
-      {
         "claim": "Khoản 3. Người tiêu dùng có quyền yêu cầu bồi thường thiệt hại trong trường hợp dịch vụ cung cấp không đúng nội dung đã đăng ký, thông báo, công bố, niêm yết, quảng cáo, giới thiệu, giao kết, cam kết gây thiệt hại cho người tiêu dùng.",
         "supported": true
       },
@@ -1794,9 +1754,9 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 36, Điều 10 và Điều 4 của Luật Bảo vệ quyền lợi người tiêu dùng, trong đó quy định rõ quyền của người tiêu dùng được yêu cầu bồi thường thiệt hại hoặc hoàn tiền khi dịch vụ cung cấp không đúng với nội dung đã quảng cáo.",
+    "context_reason": "Context chứa đầy đủ thông tin chính xác từ Điều 36, Điều 10 và Điều 4 của Luật Bảo vệ quyền lợi người tiêu dùng, trực tiếp trả lời việc khách hàng có quyền yêu cầu bồi thường khi dịch vụ không đúng quảng cáo và các biện pháp khắc phục khác.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, đầy đủ và có căn cứ pháp lý rõ ràng.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ, có căn cứ pháp lý rõ ràng.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1819,20 +1779,20 @@
     "order": 47,
     "expected_article": "Điều 6. Nguyên tắc bảo vệ quyền lợi người tiêu dùng",
     "expected_answer": "Bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
-    "actual_answer": "Theo Điều 6, Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
+    "actual_answer": "Theo Điều 6 Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 6, Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
+        "claim": "Theo Điều 6 Khoản 1 của Luật Bảo vệ quyền lợi người tiêu dùng 2023, bảo vệ quyền lợi người tiêu dùng là trách nhiệm của Nhà nước, tổ chức, cá nhân và toàn xã hội.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context cung cấp đầy đủ thông tin rằng bảo vệ quyền lợi người tiêu dùng là trách nhiệm chung của Nhà nước, tổ chức, cá nhân và toàn xã hội, đồng thời nêu rõ trách nhiệm cụ thể của cả Nhà nước và doanh nghiệp, trả lời hoàn toàn câu hỏi.",
+    "context_reason": "Context cung cấp đầy đủ thông tin để trả lời rằng bảo vệ quyền lợi người tiêu dùng là trách nhiệm chung của Nhà nước, tổ chức, cá nhân và toàn xã hội. Đồng thời, làm rõ Nhà nước chịu trách nhiệm chính trong việc quản lý nhà nước, còn doanh nghiệp có trách nhiệm trực tiếp trong hoạt động kinh doanh của mình.",
     "answer_relevance": 0.7,
-    "answer_reason": "Câu trả lời nêu các bên có trách nhiệm nhưng không chỉ rõ bên nào chịu trách nhiệm chính hoặc so sánh giữa Nhà nước và doanh nghiệp như câu hỏi yêu cầu.",
+    "answer_reason": "Câu trả lời liệt kê các bên có trách nhiệm nhưng không chỉ rõ ai chịu trách nhiệm chính như câu hỏi yêu cầu.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1841,7 +1801,7 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ và chính xác nội dung của câu trả lời chuẩn, đồng thời cung cấp thêm căn cứ pháp lý cụ thể."
+    "correctness_reason": "Câu trả lời thực tế hoàn toàn khớp với câu trả lời chuẩn về nội dung chính và cung cấp thêm nguồn tham chiếu chính xác."
   },
   "Nếu cửa hàng không ưu tiên giải quyết khiếu nại cho phụ nữ có thai thì có phải đền bù gì không?": {
     "order": 48,
@@ -1858,7 +1818,7 @@
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context định nghĩa phụ nữ có thai là người tiêu dùng dễ bị tổn thương, quy định rõ ràng nghĩa vụ ưu tiên giải quyết khiếu nại cho đối tượng này và nêu cụ thể việc phải bồi thường thiệt hại nếu chậm, từ chối ưu tiên hoặc từ chối tiếp nhận, xử lý yêu cầu.",
+    "context_reason": "Context định nghĩa phụ nữ có thai là người tiêu dùng dễ bị tổn thương, quy định rõ tổ chức, cá nhân kinh doanh phải ưu tiên tiếp nhận, xử lý yêu cầu của họ và phải bồi thường thiệt hại nếu chậm, từ chối ưu tiên hoặc từ chối tiếp nhận, xử lý yêu cầu.",
     "answer_relevance": 1.0,
     "answer_reason": "Trả lời thẳng vào câu hỏi, đầy đủ và có căn cứ pháp lý rõ ràng.",
     "answer_correctness": 1.0,
@@ -1891,24 +1851,24 @@
     "order": 49,
     "expected_article": "Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng",
     "expected_answer": "Có. Nghiêm cấm hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng.",
-    "actual_answer": "Theo Điều 10, Khoản 1, Điểm g) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng bị nghiêm cấm. Vì vậy, shipper giao hàng mà tráo hàng dỏm vào hộp là vi phạm luật bảo vệ người tiêu dùng.",
+    "actual_answer": "Theo Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng, Khoản 1, Điểm g:\n\n\"Đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng.\"\n\nViệc shipper tráo hàng dỏm vào hộp là hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, do đó vi phạm Luật Bảo vệ quyền lợi người tiêu dùng.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 10, Khoản 1, Điểm g) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng bị nghiêm cấm.",
+        "claim": "Theo Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng, Khoản 1, Điểm g: \"Đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, cung cấp dịch vụ cho người tiêu dùng.\"",
         "supported": true
       },
       {
-        "claim": "Vì vậy, shipper giao hàng mà tráo hàng dỏm vào hộp là vi phạm luật bảo vệ người tiêu dùng.",
+        "claim": "Việc shipper tráo hàng dỏm vào hộp là hành vi đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng, do đó vi phạm Luật Bảo vệ quyền lợi người tiêu dùng.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context chứa Điều 10 Khoản 1 điểm g, trực tiếp cấm hành vi 'đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng' của tổ chức, cá nhân kinh doanh, trả lời đầy đủ câu hỏi.",
+    "context_reason": "Điều 10 khoản 1 điểm g của Luật Bảo vệ quyền lợi người tiêu dùng trực tiếp quy định hành vi 'Đánh tráo, gian lận sản phẩm, hàng hóa, dịch vụ khi giao hàng' là hành vi bị nghiêm cấm, trả lời đầy đủ và chính xác câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, cung cấp căn cứ pháp lý cụ thể và kết luận rõ ràng.",
+    "answer_reason": "Trả lời thẳng vào câu hỏi, trích dẫn điều luật liên quan và kết luận rõ ràng.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
@@ -1921,35 +1881,35 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế đã bao gồm đầy đủ và chính xác tất cả các điểm chính trong câu trả lời chuẩn, thậm chí còn cung cấp thêm điều luật cụ thể."
+    "correctness_reason": "Câu trả lời thực tế xác nhận hành vi vi phạm luật và trích dẫn chính xác điều khoản luật liên quan, hoàn toàn khớp với câu trả lời chuẩn."
   },
   "Công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động thì có sao không?": {
     "order": 50,
     "expected_article": "Điều 10. Các hành vi bị nghiêm cấm trong bảo vệ quyền lợi người tiêu dùng",
     "expected_answer": "Có. Tổ chức, cá nhân bị nghiêm cấm kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp.",
-    "actual_answer": "Theo Điều 10, Khoản 2, Điểm c) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, hành vi kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp bị nghiêm cấm. Công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động sẽ vi phạm quy định này.",
+    "actual_answer": "Theo Điều 10, Khoản 2, Điểm c) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức, cá nhân kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp bị nghiêm cấm. Vì vậy, công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động là vi phạm pháp luật.",
     "hit": 1.0,
     "faithfulness": 1.0,
     "hallucinated_claims": [],
     "faithfulness_claims": [
       {
-        "claim": "Theo Điều 10, Khoản 2, Điểm c) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, hành vi kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp bị nghiêm cấm.",
+        "claim": "Theo Điều 10, Khoản 2, Điểm c) của Luật Bảo vệ quyền lợi người tiêu dùng 2023, tổ chức, cá nhân kinh doanh theo phương thức đa cấp không có giấy chứng nhận đăng ký hoạt động bán hàng đa cấp bị nghiêm cấm.",
         "supported": true
       },
       {
-        "claim": "Công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động sẽ vi phạm quy định này.",
+        "claim": "Vì vậy, công ty kinh doanh đa cấp chưa có giấy phép đăng ký mà đã hoạt động là vi phạm pháp luật.",
         "supported": true
       }
     ],
     "context_relevance": 1.0,
-    "context_reason": "Context nêu rõ hành vi kinh doanh đa cấp không có giấy chứng nhận đăng ký hoạt động là hành vi bị nghiêm cấm, trả lời trực tiếp câu hỏi.",
+    "context_reason": "Context trực tiếp nêu rõ kinh doanh đa cấp không có giấy phép là hành vi bị nghiêm cấm, trả lời đầy đủ câu hỏi.",
     "answer_relevance": 1.0,
-    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, nêu rõ hành vi này bị nghiêm cấm và vi phạm quy định pháp luật.",
+    "answer_reason": "Câu trả lời đi thẳng vào trọng tâm câu hỏi, nêu rõ hành vi vi phạm pháp luật và trích dẫn điều luật liên quan.",
     "answer_correctness": 1.0,
     "missed_points": [],
     "key_points": [
       {
-        "point": "Có (hành vi này là vi phạm/bị cấm)",
+        "point": "Có (hoạt động khi chưa có giấy phép là có vấn đề/vi phạm)",
         "covered": true
       },
       {
@@ -1957,6 +1917,6 @@
         "covered": true
       }
     ],
-    "correctness_reason": "Câu trả lời thực tế bao gồm đầy đủ các điểm chính của câu trả lời chuẩn, đồng thời cung cấp thêm điều luật cụ thể."
+    "correctness_reason": "Câu trả lời thực tế đã đề cập đầy đủ và chính xác các điểm chính của câu trả lời chuẩn, thậm chí còn cung cấp thêm căn cứ pháp lý cụ thể."
   }
 }
