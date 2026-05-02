@@ -3,7 +3,7 @@ import sys
 import json
 import time
 import io
-
+import re
 from google import genai
 from google.genai import types
 from dotenv import load_dotenv
@@ -162,23 +162,10 @@ def build_full_context(sources: list) -> str:
 
 
 # ======================== METRIC 1: HIT RATE ========================
-# def compute_hit_rate(expected_article: str, sources: list) -> float:
-#     """Không cần gọi LLM. 1.0 nếu expected_article có trong sources, 0.0 nếu không."""
-#     if not expected_article:
-#         return 1.0
-#     expected = expected_article.lower().strip()
-#     for s in sources:
-#         title   = s.get('title', '').lower().strip()
-#         article = s.get('article', '').lower().strip()
-#         if expected in title or expected in article:
-#             return 1.0
-#     return 0.0
-import re
-
 def compute_hit_rate(expected_article: str, sources: list) -> float:
     """Đánh giá hit rate với cơ chế fuzzy match (chuẩn hóa khoảng trắng)"""
     if not expected_article:
-        return 1.0
+        return None
         
     # 1. Hàm phụ để dọn sạch chuỗi (xóa \n, biến nhiều khoảng trắng thành 1)
     def clean_text(text: str) -> str:
@@ -247,7 +234,7 @@ def compute_faithfulness(context: str, answer: str) -> tuple:
         claims = data.get("claims", [])
         if not claims:
             print("  [Faithfulness] Parse OK nhưng claims rỗng → mặc định 1.0")
-            return 1.0, []
+            return None, []
         supported = sum(1 for c in claims if c.get("supported", False))
         return round(supported / len(claims), 3), claims
     except Exception as e:
@@ -393,7 +380,7 @@ def compute_answer_correctness(query: str, expected_answer: str, actual_answer: 
         raw_text = raw if 'raw' in locals() else 'Rỗng hoặc Timeout'
         print(f"  [LỖI PARSE] Không thể đọc JSON. Lỗi Python: {e}")
         print(f"  [RAW TEXT TỪ API TRẢ VỀ]:\n>>>\n{raw_text}\n<<<")
-        return None, []  # Hoặc return None, [], "" đối với hàm correctness
+        return None, [], ""  # Hoặc return None, [], "" đối với hàm correctness
 
 
 # ======================== MAIN ========================
@@ -425,7 +412,7 @@ def main():
         order           += 1
 
         if query in already_done:
-            print(f"\n[{order}] ⏭️  Bỏ qua (đã có): {query[:60]}")
+            print(f"\n[{order}] Bỏ qua (đã có): {query[:60]}")
             continue
 
         print(f"\n[{order}] Q: {query[:80]}")
@@ -455,9 +442,9 @@ def main():
         )
         missed_points = [p['point'] for p in key_points if not p.get('covered')]
 
-        print(f"  Hit Rate           : {'✅ HIT' if hit else '❌ MISS'}")
+        print(f"  Hit Rate           : {' HIT' if hit else ' MISS'}")
         if f_score is not None:
-            print(f"  Faithfulness       : {f_score:.3f}  {'⚠️  hallucinated: ' + str(len(unsupported)) + ' claims' if unsupported else '✅'}")
+            print(f"  Faithfulness       : {f_score:.3f}  {' hallucinated: ' + str(len(unsupported)) + ' claims' if unsupported else '✅'}")
         else:
             print(f"  Faithfulness       : — (Lỗi parse)")
             
@@ -490,39 +477,39 @@ def main():
         }
         save_progress(progress)
 
-    # ======================== BÁO CÁO ========================
+# ======================== BÁO CÁO ========================
     results = list(progress.values())
     if not results:
         print("\nKhông có câu hỏi hợp lệ nào.")
         return
-
-    n       = len(results)
-    avg_hit = sum(r['hit'] for r in results) / n
-    
+ 
+    n = len(results)
+ 
+    # [FIX] Hit rate chỉ tính những câu có ground truth (hit != None)
+    hit_results = [r for r in results if r['hit'] is not None]
+    avg_hit     = sum(r['hit'] for r in hit_results) / len(hit_results) if hit_results else 0.0
+ 
     f_results   = [r for r in results if r['faithfulness'] is not None]
     avg_f       = sum(r['faithfulness'] for r in f_results) / len(f_results) if f_results else 0.0
-    
+ 
     ctx_results = [r for r in results if r['context_relevance'] is not None]
     avg_ctx     = sum(r['context_relevance'] for r in ctx_results) / len(ctx_results) if ctx_results else 0.0
-    
+ 
     ans_results = [r for r in results if r['answer_relevance'] is not None]
     avg_ans     = sum(r['answer_relevance'] for r in ans_results) / len(ans_results) if ans_results else 0.0
-
-    # Answer Correctness: chỉ tính những câu có expected_answer
+ 
     cor_results = [r for r in results if r['answer_correctness'] is not None]
-    avg_cor     = sum(r['answer_correctness'] for r in cor_results) / len(cor_results) \
-                  if cor_results else None
-
-    failed_hits  = [r['order'] for r in results if r['hit'] == 0.0]
-    low_faith    = [r for r in results if r['hallucinated_claims']]
-    low_correct  = [r for r in cor_results if r['answer_correctness'] is not None
-                    and r['answer_correctness'] < 0.5]
-
+    avg_cor     = sum(r['answer_correctness'] for r in cor_results) / len(cor_results) if cor_results else None
+ 
+    failed_hits = [r['order'] for r in hit_results if r['hit'] == 0.0]
+    low_faith   = [r for r in results if r['hallucinated_claims']]
+    low_correct = [r for r in cor_results if r['answer_correctness'] < 0.5]
+ 
     print("\n\n" + "=" * 58)
     print("BÁO CÁO KẾT QUẢ ĐÁNH GIÁ")
     print("=" * 58)
     print(f"Tổng câu hỏi (in-scope)    : {n}")
-    print(f"Hit Rate                   : {avg_hit:.1%}  ({int(sum(r['hit'] for r in results))}/{n})")
+    print(f"Hit Rate                   : {avg_hit:.1%}  ({int(sum(r['hit'] for r in hit_results))}/{len(hit_results)} câu có ground truth)")
     print(f"Avg Faithfulness           : {avg_f:.3f} / 1.000")
     print(f"Avg Context Relevance      : {avg_ctx:.3f} / 1.000")
     print(f"Avg Answer Relevance       : {avg_ans:.3f} / 1.000")
@@ -530,30 +517,31 @@ def main():
         print(f"Avg Answer Correctness     : {avg_cor:.3f} / 1.000  ({len(cor_results)} câu có ground truth)")
     else:
         print(f"Avg Answer Correctness     : —  (không có expected_answer)")
-
+ 
     if failed_hits:
-        print(f"\n❌ Miss retrieval ({len(failed_hits)} câu — thứ tự: {failed_hits[:10]})")
-
+        print(f"\n Miss retrieval ({len(failed_hits)} câu — thứ tự: {failed_hits[:10]})")
+ 
     if low_faith:
-        print(f"\n⚠️  Hallucination ({len(low_faith)} câu):")
+        print(f"\n Hallucination ({len(low_faith)} câu):")
         for r in low_faith[:3]:
             q = next(q for q, v in progress.items() if v is r)
             print(f"   Q: {q[:65]}")
             for h in r['hallucinated_claims'][:2]:
                 print(f"      → Bịa: {h[:75]}")
-
+ 
     if low_correct:
-        print(f"\n❌ Trả lời sai/thiếu nhiều ({len(low_correct)} câu, score < 0.5):")
+        print(f"\n Trả lời sai/thiếu nhiều ({len(low_correct)} câu, score < 0.5):")
         for r in low_correct[:3]:
             q = next(q for q, v in progress.items() if v is r)
             print(f"   [{r['answer_correctness']:.2f}] Q: {q[:65]}")
             for p in r['missed_points'][:2]:
                 print(f"      → Thiếu: {p[:75]}")
-
+ 
     print("=" * 58)
-
+ 
     save_report({
         "total"                  : n,
+        "hit_rate_sample_size"   : len(hit_results),
         "avg_hit_rate"           : round(avg_hit, 4),
         "avg_faithfulness"       : round(avg_f, 4),
         "avg_context_relevance"  : round(avg_ctx, 4),
@@ -563,7 +551,8 @@ def main():
         "failed_hit_orders"      : failed_hits,
         "details"                : results,
     })
-
-
+ 
+ 
 if __name__ == "__main__":
     main()
+ 

@@ -246,9 +246,9 @@
     "is_in_scope": true
   },
   {
-    "query": "Mình đi xe máy chậm rì rề trên đường thì phải đi sát lề bên nào cho đúng luật?",
-    "expected_article": "Điều 13. Sử dụng làn đường",
-    "expected_answer": "Phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi về bên phải theo chiều đi của mình.",
+    "query": "Khi khách hàng mua sản phẩm, tổ chức kinh doanh có nghĩa vụ phải đưa hóa đơn hoặc chứng từ mua bán không?",
+    "expected_article": "Điều 29. Cung cấp bằng chứng giao dịch",
+    "expected_answer": "Có. Tổ chức, cá nhân kinh doanh có trách nhiệm cung cấp cho người tiêu dùng hóa đơn, chứng từ, tài liệu liên quan đến giao dịch theo quy định hoặc theo yêu cầu của người tiêu dùng.",
     "is_in_scope": true
   },
   {
